@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="2360"
+   name=""
+   committed-date="2006-10-13T05:45:08.453292Z"
+   url="http://svn.techno-weenie.net/projects/plugins/acts_as_attachment/generators"
+   last-author="technoweenie"
+   kind="dir"
+   uuid="567b1171-46fb-0310-a4c9-b4bef9110e78"
+   revision="2747"/>
+<entry
+   name="attachment_model"
+   kind="dir"/>
+</wc-entries>

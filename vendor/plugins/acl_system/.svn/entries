@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="86"
+   name=""
+   committed-date="2006-04-30T00:30:22.922174Z"
+   url="http://opensvn.csie.org/ezra/rails/plugins/dev/acl_system2"
+   last-author="ezra"
+   kind="dir"
+   uuid="e8081bd4-020a-0410-a7c4-8039225954a7"
+   revision="136"/>
+<entry
+   name="test"
+   kind="dir"/>
+<entry
+   committed-rev="75"
+   name="LICENSE.txt"
+   text-time="2006-05-28T11:24:54.000000Z"
+   committed-date="2006-03-10T19:45:27.315855Z"
+   checksum="fa0d023e204bae3fe2a97c47c8a91cd3"
+   last-author="loob2"
+   kind="file"
+   prop-time="2006-05-28T11:24:53.000000Z"/>
+<entry
+   committed-rev="75"
+   name="init.rb"
+   text-time="2006-05-28T11:24:54.000000Z"
+   committed-date="2006-03-10T19:45:27.315855Z"
+   checksum="2566f1a0727baa1295e1f99f72b05fa1"
+   last-author="loob2"
+   kind="file"
+   prop-time="2006-05-28T11:24:53.000000Z"/>
+<entry
+   name="lib"
+   kind="dir"/>
+<entry
+   committed-rev="84"
+   name="README"
+   text-time="2006-05-28T11:24:54.000000Z"
+   committed-date="2006-03-22T19:41:25.972641Z"
+   checksum="e9de5aa448c1e0a770507912bab22431"
+   last-author="ezra"
+   kind="file"
+   prop-time="2006-05-28T11:24:54.000000Z"/>
+</wc-entries>

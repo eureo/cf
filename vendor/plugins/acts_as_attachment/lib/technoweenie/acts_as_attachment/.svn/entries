@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="2734"
+   name=""
+   committed-date="2007-02-09T07:11:49.212170Z"
+   url="http://svn.techno-weenie.net/projects/plugins/acts_as_attachment/lib/technoweenie/acts_as_attachment"
+   last-author="technoweenie"
+   kind="dir"
+   uuid="567b1171-46fb-0310-a4c9-b4bef9110e78"
+   revision="2747"/>
+<entry
+   committed-rev="2734"
+   name="file_system_methods.rb"
+   text-time="2007-02-19T10:30:25.000000Z"
+   committed-date="2007-02-09T07:11:49.212170Z"
+   checksum="f9171f270df7308f98f3771c4ff6d7cd"
+   last-author="technoweenie"
+   kind="file"
+   prop-time="2007-02-19T10:30:25.000000Z"/>
+<entry
+   committed-rev="2485"
+   name="db_file_methods.rb"
+   text-time="2007-02-19T10:30:25.000000Z"
+   committed-date="2006-11-19T20:36:20.458470Z"
+   checksum="c293be4e6bfaa167a8702c0ec7471a21"
+   last-author="technoweenie"
+   kind="file"
+   prop-time="2007-02-19T10:30:25.000000Z"/>
+<entry
+   committed-rev="2485"
+   name="instance_methods.rb"
+   text-time="2007-02-19T10:30:25.000000Z"
+   committed-date="2006-11-19T20:36:20.458470Z"
+   checksum="024620a550f952f3fa903a0ebf17ab9d"
+   last-author="technoweenie"
+   kind="file"
+   prop-time="2007-02-19T10:30:25.000000Z"/>
+<entry
+   committed-rev="2469"
+   name="class_methods.rb"
+   text-time="2007-02-19T10:30:25.000000Z"
+   committed-date="2006-11-13T22:20:20.462312Z"
+   checksum="b4505979cd5cf2073060be4662942fc3"
+   last-author="technoweenie"
+   kind="file"
+   prop-time="2007-02-19T10:30:25.000000Z"/>
+</wc-entries>

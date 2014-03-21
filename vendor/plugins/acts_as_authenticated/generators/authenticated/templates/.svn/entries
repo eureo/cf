@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="1033"
+   name=""
+   committed-date="2006-03-29T02:51:08.227195Z"
+   url="http://svn.techno-weenie.net/projects/plugins/acts_as_authenticated/generators/authenticated/templates"
+   last-author="technoweenie"
+   kind="dir"
+   uuid="567b1171-46fb-0310-a4c9-b4bef9110e78"
+   revision="1163"/>
+<entry
+   committed-rev="1033"
+   name="unit_test.rb"
+   text-time="2006-05-28T11:24:03.000000Z"
+   committed-date="2006-03-29T02:51:08.227195Z"
+   checksum="a70f71f9c8d8274f14be1b7b781a8325"
+   last-author="technoweenie"
+   kind="file"
+   prop-time="2006-05-28T11:24:03.000000Z"/>
+<entry
+   committed-rev="223"
+   name="helper.rb"
+   text-time="2006-05-28T11:24:03.000000Z"
+   committed-date="2005-11-13T03:11:33.247674Z"
+   checksum="097b8498e14865cd721f7450de37e160"
+   last-author="technoweenie"
+   kind="file"
+   prop-time="2006-05-28T11:24:03.000000Z"/>
+<entry
+   committed-rev="1000"
+   name="authenticated_test_helper.rb"
+   text-time="2006-05-28T11:24:03.000000Z"
+   committed-date="2006-03-21T04:21:32.695764Z"
+   checksum="16ae76103b21e5637d061daa40a5c206"
+   last-author="technoweenie"
+   kind="file"
+   prop-time="2006-05-28T11:24:03.000000Z"/>
+<entry
+   committed-rev="1017"
+   name="model.rb"
+   text-time="2006-05-28T11:24:03.000000Z"
+   committed-date="2006-03-28T17:19:18.547065Z"
+   checksum="085179bf483ac172fe6a786f1760e420"
+   last-author="technoweenie"
+   kind="file"
+   prop-time="2006-05-28T11:24:03.000000Z"/>
+<entry
+   committed-rev="1033"
+   name="functional_test.rb"
+   text-time="2006-05-28T11:24:03.000000Z"
+   committed-date="2006-03-29T02:51:08.227195Z"
+   checksum="934e276aca4806ab1c48b0b798d58501"
+   last-author="technoweenie"
+   kind="file"
+   prop-time="2006-05-28T11:24:03.000000Z"/>
+<entry
+   committed-rev="1014"
+   name="controller.rb"
+   text-time="2006-05-28T11:24:03.000000Z"
+   committed-date="2006-03-28T07:07:28.572791Z"
+   checksum="fffa703959187970821f25b6ad699578"
+   last-author="technoweenie"
+   kind="file"
+   prop-time="2006-05-28T11:24:03.000000Z"/>
+<entry
+   committed-rev="1014"
+   name="authenticated_system.rb"
+   text-time="2006-05-28T11:24:03.000000Z"
+   committed-date="2006-03-28T07:07:28.572791Z"
+   checksum="09d23efd611b59f26cb912873693464a"
+   last-author="technoweenie"
+   kind="file"
+   prop-time="2006-05-28T11:24:03.000000Z"/>
+<entry
+   committed-rev="500"
+   name="fixtures.yml"
+   text-time="2006-05-28T11:24:03.000000Z"
+   committed-date="2005-12-24T03:55:29.922258Z"
+   checksum="937e424e1182f5df121c8c6fe91fe10e"
+   last-author="technoweenie"
+   kind="file"
+   prop-time="2006-05-28T11:24:03.000000Z"/>
+<entry
+   committed-rev="1001"
+   name="signup.rhtml"
+   text-time="2006-05-28T11:24:03.000000Z"
+   committed-date="2006-03-21T04:24:25.946169Z"
+   checksum="74bd8bad6449ad23f29ffb185aa85fc6"
+   last-author="technoweenie"
+   kind="file"
+   prop-time="2006-05-28T11:24:03.000000Z"/>
+<entry
+   committed-rev="244"
+   name="index.rhtml"
+   text-time="2006-05-28T11:24:03.000000Z"
+   committed-date="2005-11-13T22:31:42.745400Z"
+   checksum="fb0b33eda754b351711053b9629b27bf"
+   last-author="technoweenie"
+   kind="file"
+   prop-time="2006-05-28T11:24:03.000000Z"/>
+<entry
+   committed-rev="201"
+   name="login.rhtml"
+   text-time="2006-05-28T11:24:03.000000Z"
+   committed-date="2005-11-11T05:46:00.673280Z"
+   checksum="159e7879aeb565a1bb29d8a6bb4b2f11"
+   last-author="technoweenie"
+   kind="file"
+   prop-time="2006-05-28T11:24:03.000000Z"/>
+</wc-entries>

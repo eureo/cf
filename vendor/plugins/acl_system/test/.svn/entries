@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="79"
+   name=""
+   committed-date="2006-03-10T21:47:53.857006Z"
+   url="http://opensvn.csie.org/ezra/rails/plugins/dev/acl_system2/test"
+   last-author="ezra"
+   kind="dir"
+   uuid="e8081bd4-020a-0410-a7c4-8039225954a7"
+   revision="136"/>
+<entry
+   committed-rev="75"
+   name="test_helper.rb"
+   text-time="2006-05-28T11:24:53.000000Z"
+   committed-date="2006-03-10T19:45:27.315855Z"
+   checksum="5799f6d6fa2ff72795131fda1f51e0af"
+   last-author="loob2"
+   kind="file"
+   prop-time="2006-05-28T11:24:53.000000Z"/>
+<entry
+   committed-rev="79"
+   name="access_control_test.rb"
+   text-time="2006-05-28T11:24:53.000000Z"
+   committed-date="2006-03-10T21:47:53.857006Z"
+   checksum="d34149d3cb4c1fb4d49662afbb81bbc8"
+   last-author="ezra"
+   kind="file"
+   prop-time="2006-05-28T11:24:53.000000Z"/>
+</wc-entries>

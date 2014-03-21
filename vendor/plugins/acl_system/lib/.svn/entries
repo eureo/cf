@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="86"
+   name=""
+   committed-date="2006-04-30T00:30:22.922174Z"
+   url="http://opensvn.csie.org/ezra/rails/plugins/dev/acl_system2/lib"
+   last-author="ezra"
+   kind="dir"
+   uuid="e8081bd4-020a-0410-a7c4-8039225954a7"
+   revision="136"/>
+<entry
+   name="caboose"
+   kind="dir"/>
+</wc-entries>

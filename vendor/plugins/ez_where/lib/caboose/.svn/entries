@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="85"
+   name=""
+   committed-date="2006-04-01T18:45:31.638644Z"
+   url="http://opensvn.csie.org/ezra/rails/plugins/dev/ez_where/lib/caboose"
+   last-author="loob2"
+   kind="dir"
+   uuid="e8081bd4-020a-0410-a7c4-8039225954a7"
+   repos="http://opensvn.csie.org/ezra"
+   revision="146"/>
+<entry
+   committed-rev="85"
+   name="ez.rb"
+   text-time="2006-08-19T14:52:41.000000Z"
+   committed-date="2006-04-01T18:45:31.638644Z"
+   checksum="3415e73728b3a213c58e663e8720d383"
+   last-author="loob2"
+   kind="file"
+   prop-time="2006-08-19T14:52:40.000000Z"/>
+<entry
+   committed-rev="31"
+   name="hash.rb"
+   text-time="2006-08-19T14:52:41.000000Z"
+   committed-date="2006-02-03T20:14:24.068749Z"
+   checksum="5ca6797584afeedc9e14e17cd47ab1b1"
+   last-author="loob2"
+   kind="file"
+   prop-time="2006-08-19T14:52:40.000000Z"/>
+<entry
+   committed-rev="72"
+   name="condition.rb"
+   text-time="2006-08-19T14:52:41.000000Z"
+   committed-date="2006-03-09T22:24:00.156926Z"
+   checksum="21585ac272f20ec50a7bf24f035374bf"
+   last-author="loob2"
+   kind="file"
+   prop-time="2006-08-19T14:52:40.000000Z"/>
+<entry
+   committed-rev="82"
+   name="clause.rb"
+   text-time="2006-08-19T14:52:41.000000Z"
+   committed-date="2006-03-19T18:32:55.580831Z"
+   checksum="ee9e614ba2332ba48cd1946e4a6a504f"
+   last-author="loob2"
+   kind="file"
+   prop-time="2006-08-19T14:52:41.000000Z"/>
+</wc-entries>

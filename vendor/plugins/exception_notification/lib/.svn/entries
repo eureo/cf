@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="3900"
+   name=""
+   committed-date="2006-03-16T17:48:31.045435Z"
+   url="http://dev.rubyonrails.org/svn/rails/plugins/exception_notification/lib"
+   last-author="minam"
+   kind="dir"
+   uuid="5ecf4fe2-1ee6-0310-87b1-e25e094e27de"
+   revision="4371"/>
+<entry
+   committed-rev="3569"
+   name="exception_notifier.rb"
+   text-time="2006-05-28T11:25:18.000000Z"
+   committed-date="2006-02-10T23:17:39.427597Z"
+   checksum="24c21cd56a7ce24476108d7610890e00"
+   last-author="minam"
+   kind="file"
+   prop-time="2006-05-28T11:25:18.000000Z"/>
+<entry
+   committed-rev="3900"
+   name="exception_notifiable.rb"
+   text-time="2006-05-28T11:25:18.000000Z"
+   committed-date="2006-03-16T17:48:31.045435Z"
+   checksum="33d32fbaeb5f7eb2d1297a05a58f4fd1"
+   last-author="minam"
+   kind="file"
+   prop-time="2006-05-28T11:25:18.000000Z"/>
+<entry
+   committed-rev="3569"
+   name="exception_notifier_helper.rb"
+   text-time="2006-05-28T11:25:18.000000Z"
+   committed-date="2006-02-10T23:17:39.427597Z"
+   checksum="8d151fedda4e66a6393f200a4a5e24f2"
+   last-author="minam"
+   kind="file"
+   prop-time="2006-05-28T11:25:18.000000Z"/>
+</wc-entries>

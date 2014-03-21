@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="19"
+   name=""
+   committed-date="2006-01-30T21:54:18.100838Z"
+   url="http://opensvn.csie.org/ezra/rails/plugins/dev/ez_where/test/fixtures"
+   last-author="loob2"
+   kind="dir"
+   uuid="e8081bd4-020a-0410-a7c4-8039225954a7"
+   repos="http://opensvn.csie.org/ezra"
+   revision="146"/>
+<entry
+   committed-rev="12"
+   name="authors.yml"
+   text-time="2006-08-19T14:52:38.000000Z"
+   committed-date="2006-01-29T11:00:04.778786Z"
+   checksum="b0d9c32f77a5f0a07534e8f00c814174"
+   last-author="loob2"
+   kind="file"
+   prop-time="2006-08-19T14:52:38.000000Z"/>
+<entry
+   committed-rev="19"
+   name="comments.yml"
+   text-time="2006-08-19T14:52:38.000000Z"
+   committed-date="2006-01-30T21:54:18.100838Z"
+   checksum="186a37607987f02c4ad2ae72680bab79"
+   last-author="loob2"
+   kind="file"
+   prop-time="2006-08-19T14:52:38.000000Z"/>
+<entry
+   committed-rev="12"
+   name="articles.yml"
+   text-time="2006-08-19T14:52:38.000000Z"
+   committed-date="2006-01-29T11:00:04.778786Z"
+   checksum="5360db52cc2b8b1129a4766c15fc23b0"
+   last-author="loob2"
+   kind="file"
+   prop-time="2006-08-19T14:52:38.000000Z"/>
+</wc-entries>

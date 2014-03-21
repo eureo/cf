@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="3569"
+   name=""
+   committed-date="2006-02-10T23:17:39.427597Z"
+   url="http://dev.rubyonrails.org/svn/rails/plugins/exception_notification/views/exception_notifier"
+   last-author="minam"
+   kind="dir"
+   uuid="5ecf4fe2-1ee6-0310-87b1-e25e094e27de"
+   revision="4371"/>
+<entry
+   committed-rev="2811"
+   name="_backtrace.rhtml"
+   text-time="2006-05-28T11:25:18.000000Z"
+   committed-date="2005-10-29T15:16:10.495234Z"
+   checksum="1787893e736f669df48def7f6be2b85b"
+   last-author="david"
+   kind="file"
+   prop-time="2006-05-28T11:25:18.000000Z"/>
+<entry
+   committed-rev="2811"
+   name="_title.rhtml"
+   text-time="2006-05-28T11:25:18.000000Z"
+   committed-date="2005-10-29T15:16:10.495234Z"
+   checksum="35b1e094fafecf25566afd7fbbbf1252"
+   last-author="david"
+   kind="file"
+   prop-time="2006-05-28T11:25:18.000000Z"/>
+<entry
+   committed-rev="2811"
+   name="_session.rhtml"
+   text-time="2006-05-28T11:25:18.000000Z"
+   committed-date="2005-10-29T15:16:10.495234Z"
+   checksum="f0f08c89745bee74c3f3c2eb718faf7b"
+   last-author="david"
+   kind="file"
+   prop-time="2006-05-28T11:25:18.000000Z"/>
+<entry
+   committed-rev="3569"
+   name="_environment.rhtml"
+   text-time="2006-05-28T11:25:18.000000Z"
+   committed-date="2006-02-10T23:17:39.427597Z"
+   checksum="43e4f6c902c5ba93812425617e337184"
+   last-author="minam"
+   kind="file"
+   prop-time="2006-05-28T11:25:18.000000Z"/>
+<entry
+   committed-rev="3569"
+   name="_inspect_model.rhtml"
+   text-time="2006-05-28T11:25:18.000000Z"
+   committed-date="2006-02-10T23:17:39.427597Z"
+   checksum="8826bd75cf756e60b3f70cd5a7d5b920"
+   last-author="minam"
+   kind="file"
+   prop-time="2006-05-28T11:25:18.000000Z"/>
+<entry
+   committed-rev="2811"
+   name="exception_notification.rhtml"
+   text-time="2006-05-28T11:25:18.000000Z"
+   committed-date="2005-10-29T15:16:10.495234Z"
+   checksum="2d20be9518452080b4d7b3fd514955c9"
+   last-author="david"
+   kind="file"
+   prop-time="2006-05-28T11:25:18.000000Z"/>
+<entry
+   committed-rev="2811"
+   name="_request.rhtml"
+   text-time="2006-05-28T11:25:18.000000Z"
+   committed-date="2005-10-29T15:16:10.495234Z"
+   checksum="7abb09113cbcd2d789cbc253b1c0e04c"
+   last-author="david"
+   kind="file"
+   prop-time="2006-05-28T11:25:18.000000Z"/>
+</wc-entries>

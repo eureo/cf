@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="23"
+   name=""
+   committed-date="2006-05-24T07:28:09.381611Z"
+   url="http://svn.rubaidh.com/plugins/trunk/google_analytics/lib/rubaidh"
+   last-author="mathie"
+   kind="dir"
+   uuid="d6511e60-4710-0410-a7ce-ed01584c9eb4"
+   revision="23"/>
+<entry
+   committed-rev="23"
+   name="google_analytics.rb"
+   text-time="2006-05-28T11:22:57.000000Z"
+   committed-date="2006-05-24T07:28:09.381611Z"
+   checksum="c9b727f271dd266c93e5f13f98f8e1b4"
+   last-author="mathie"
+   kind="file"
+   prop-time="2006-05-28T11:22:57.000000Z"/>
+</wc-entries>

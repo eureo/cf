@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="1"
+   name=""
+   committed-date="2005-11-04T00:06:03.824077Z"
+   url="http://opensvn.csie.org/rails_file_column/plugins/file_column/trunk/test/public"
+   last-author="skanthak"
+   kind="dir"
+   uuid="6a5db2c9-b104-0410-84e5-917aad89f9d9"
+   revision="64"/>
+</wc-entries>

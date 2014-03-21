@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="2457"
+   name=""
+   committed-date="2006-11-09T05:51:43.353156Z"
+   url="http://svn.techno-weenie.net/projects/plugins/acts_as_attachment/test/fixtures"
+   last-author="technoweenie"
+   kind="dir"
+   uuid="567b1171-46fb-0310-a4c9-b4bef9110e78"
+   revision="2747"/>
+<entry
+   name="files"
+   kind="dir"/>
+<entry
+   committed-rev="2455"
+   name="base_attachment_tests.rb"
+   text-time="2007-02-19T10:30:25.000000Z"
+   committed-date="2006-11-09T05:43:05.410513Z"
+   checksum="98c0407c5af08cdceeb4d7b6a933b43f"
+   last-author="technoweenie"
+   kind="file"
+   prop-time="2007-02-19T10:30:25.000000Z"/>
+<entry
+   committed-rev="2457"
+   name="attachment.rb"
+   text-time="2007-02-19T10:30:25.000000Z"
+   committed-date="2006-11-09T05:51:43.353156Z"
+   checksum="7eede46925b80326bc47585d9e897600"
+   last-author="technoweenie"
+   kind="file"
+   prop-time="2007-02-19T10:30:25.000000Z"/>
+</wc-entries>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="2360"
+   name=""
+   committed-date="2006-10-13T05:45:08.453292Z"
+   url="http://svn.techno-weenie.net/projects/plugins/acts_as_attachment/generators/attachment_model/templates"
+   last-author="technoweenie"
+   kind="dir"
+   uuid="567b1171-46fb-0310-a4c9-b4bef9110e78"
+   revision="2747"/>
+<entry
+   committed-rev="1469"
+   name="unit_test.rb"
+   text-time="2007-02-19T10:30:26.000000Z"
+   committed-date="2006-07-30T15:45:51.892507Z"
+   checksum="7e8d42d87e0fa423fce786099a01daf6"
+   last-author="technoweenie"
+   kind="file"
+   prop-time="2007-02-19T10:30:26.000000Z"/>
+<entry
+   committed-rev="1469"
+   name="model.rb"
+   text-time="2007-02-19T10:30:26.000000Z"
+   committed-date="2006-07-30T15:45:51.892507Z"
+   checksum="9608013ae612f96d6ba2645fac81f289"
+   last-author="technoweenie"
+   kind="file"
+   prop-time="2007-02-19T10:30:26.000000Z"/>
+<entry
+   committed-rev="1469"
+   name="fixtures.yml"
+   text-time="2007-02-19T10:30:26.000000Z"
+   committed-date="2006-07-30T15:45:51.892507Z"
+   checksum="ed2fd6f8dfcd29af635c13d69dd81d7e"
+   last-author="technoweenie"
+   kind="file"
+   prop-time="2007-02-19T10:30:26.000000Z"/>
+<entry
+   committed-rev="2360"
+   name="migration.rb"
+   text-time="2007-02-19T10:30:26.000000Z"
+   committed-date="2006-10-13T05:45:08.453292Z"
+   checksum="5d60734eb42c6094873c03df58c73f4e"
+   last-author="technoweenie"
+   kind="file"
+   prop-time="2007-02-19T10:30:26.000000Z"/>
+</wc-entries>

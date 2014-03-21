@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="2360"
+   name=""
+   committed-date="2006-10-13T05:45:08.453292Z"
+   url="http://svn.techno-weenie.net/projects/plugins/acts_as_attachment/generators/attachment_model"
+   last-author="technoweenie"
+   kind="dir"
+   uuid="567b1171-46fb-0310-a4c9-b4bef9110e78"
+   revision="2747"/>
+<entry
+   committed-rev="1469"
+   name="attachment_model_generator.rb"
+   text-time="2007-02-19T10:30:26.000000Z"
+   committed-date="2006-07-30T15:45:51.892507Z"
+   checksum="0a85935b88896d13116f5c3a20cd2917"
+   last-author="technoweenie"
+   kind="file"
+   prop-time="2007-02-19T10:30:26.000000Z"/>
+<entry
+   committed-rev="1469"
+   name="USAGE"
+   text-time="2007-02-19T10:30:26.000000Z"
+   committed-date="2006-07-30T15:45:51.892507Z"
+   checksum="6fbd70e9ca06465588c4c089c4de592e"
+   last-author="technoweenie"
+   kind="file"
+   prop-time="2007-02-19T10:30:26.000000Z"/>
+<entry
+   name="templates"
+   kind="dir"/>
+</wc-entries>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="85"
+   name=""
+   committed-date="2006-04-01T18:45:31.638644Z"
+   url="http://opensvn.csie.org/ezra/rails/plugins/dev/ez_where/lib"
+   last-author="loob2"
+   kind="dir"
+   uuid="e8081bd4-020a-0410-a7c4-8039225954a7"
+   repos="http://opensvn.csie.org/ezra"
+   revision="146"/>
+<entry
+   name="caboose"
+   kind="dir"/>
+</wc-entries>

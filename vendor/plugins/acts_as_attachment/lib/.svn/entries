@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="2734"
+   name=""
+   committed-date="2007-02-09T07:11:49.212170Z"
+   url="http://svn.techno-weenie.net/projects/plugins/acts_as_attachment/lib"
+   last-author="technoweenie"
+   kind="dir"
+   uuid="567b1171-46fb-0310-a4c9-b4bef9110e78"
+   revision="2747"/>
+<entry
+   committed-rev="873"
+   name="db_file.rb"
+   text-time="2007-02-19T10:30:25.000000Z"
+   committed-date="2006-02-27T01:44:08.384260Z"
+   checksum="8f854c84e27ad9e945770cb711adde15"
+   last-author="technoweenie"
+   kind="file"
+   prop-time="2007-02-19T10:30:25.000000Z"/>
+<entry
+   name="technoweenie"
+   kind="dir"/>
+</wc-entries>

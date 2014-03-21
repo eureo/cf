@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="86"
+   name=""
+   committed-date="2006-04-30T00:30:22.922174Z"
+   url="http://opensvn.csie.org/ezra/rails/plugins/dev/acl_system2/lib/caboose"
+   last-author="ezra"
+   kind="dir"
+   uuid="e8081bd4-020a-0410-a7c4-8039225954a7"
+   revision="136"/>
+<entry
+   committed-rev="76"
+   name="role_handler.rb"
+   text-time="2006-05-28T11:24:54.000000Z"
+   committed-date="2006-03-10T20:13:32.175870Z"
+   checksum="cb9efa53fa44004b6d649e7d61513938"
+   last-author="ezra"
+   kind="file"
+   prop-time="2006-05-28T11:24:53.000000Z"/>
+<entry
+   committed-rev="86"
+   name="access_control.rb"
+   text-time="2006-05-28T11:24:54.000000Z"
+   committed-date="2006-04-30T00:30:22.922174Z"
+   checksum="ab0d8b0c24a33ecf2e519a78c696c9c2"
+   last-author="ezra"
+   kind="file"
+   prop-time="2006-05-28T11:24:54.000000Z"/>
+<entry
+   committed-rev="75"
+   name="logic_parser.rb"
+   text-time="2006-05-28T11:24:54.000000Z"
+   committed-date="2006-03-10T19:45:27.315855Z"
+   checksum="e4f2f1ceb9b63271a1c173714d57fac7"
+   last-author="loob2"
+   kind="file"
+   prop-time="2006-05-28T11:24:54.000000Z"/>
+</wc-entries>

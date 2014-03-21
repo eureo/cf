@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="53"
+   name=""
+   committed-date="2006-01-01T19:53:31.773189Z"
+   url="http://opensvn.csie.org/rails_file_column/plugins/file_column/trunk/test/fixtures"
+   last-author="skanthak"
+   kind="dir"
+   uuid="6a5db2c9-b104-0410-84e5-917aad89f9d9"
+   revision="64"/>
+<entry
+   committed-rev="1"
+   name="kerb.jpg"
+   text-time="2006-05-28T11:22:02.000000Z"
+   committed-date="2005-11-04T00:06:03.824077Z"
+   checksum="904af3d35dae47c4b643b6dd682959d5"
+   last-author="skanthak"
+   kind="file"
+   prop-time="2006-05-28T11:22:01.000000Z"/>
+<entry
+   committed-rev="53"
+   name="schema.rb"
+   text-time="2006-05-28T11:22:02.000000Z"
+   committed-date="2006-01-01T19:53:31.773189Z"
+   checksum="478cff41f21a97361e97d37248907569"
+   last-author="skanthak"
+   kind="file"
+   prop-time="2006-05-28T11:22:01.000000Z"/>
+<entry
+   committed-rev="45"
+   name="entry.rb"
+   text-time="2006-05-28T11:22:02.000000Z"
+   committed-date="2005-12-13T17:20:53.350558Z"
+   checksum="df51114903da38eeff0c3796d60795f5"
+   last-author="skanthak"
+   kind="file"
+   prop-time="2006-05-28T11:22:01.000000Z"/>
+<entry
+   committed-rev="1"
+   name="mysql.sql"
+   text-time="2006-05-28T11:22:02.000000Z"
+   committed-date="2005-11-04T00:06:03.824077Z"
+   checksum="13236a15ec138b18fbb22c0fc8d9e6ad"
+   last-author="skanthak"
+   kind="file"
+   prop-time="2006-05-28T11:22:01.000000Z"/>
+<entry
+   committed-rev="1"
+   name="invalid-image.jpg"
+   text-time="2006-05-28T11:22:02.000000Z"
+   committed-date="2005-11-04T00:06:03.824077Z"
+   checksum="7c1c49d7d5fac9f308ad6cb5ed581d3f"
+   last-author="skanthak"
+   kind="file"
+   prop-time="2006-05-28T11:22:01.000000Z"/>
+<entry
+   committed-rev="1"
+   name="skanthak.png"
+   text-time="2006-05-28T11:22:02.000000Z"
+   committed-date="2005-11-04T00:06:03.824077Z"
+   checksum="2da64c7cf1245391b9600fce43e61756"
+   last-author="skanthak"
+   kind="file"
+   prop-time="2006-05-28T11:22:02.000000Z"/>
+</wc-entries>

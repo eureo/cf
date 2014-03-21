@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="1033"
+   name=""
+   committed-date="2006-03-29T02:51:08.227195Z"
+   url="http://svn.techno-weenie.net/projects/plugins/acts_as_authenticated"
+   last-author="technoweenie"
+   kind="dir"
+   uuid="567b1171-46fb-0310-a4c9-b4bef9110e78"
+   revision="1163"/>
+<entry
+   committed-rev="222"
+   name="init.rb"
+   text-time="2006-05-28T11:24:03.000000Z"
+   committed-date="2005-11-13T03:03:54.421160Z"
+   checksum="d41d8cd98f00b204e9800998ecf8427e"
+   last-author="technoweenie"
+   kind="file"
+   prop-time="2006-05-28T11:24:02.000000Z"/>
+<entry
+   committed-rev="1017"
+   name="CHANGELOG"
+   text-time="2006-05-28T11:24:03.000000Z"
+   committed-date="2006-03-28T17:19:18.547065Z"
+   checksum="1959ae63170cb2a45ef158d8e995c91b"
+   last-author="technoweenie"
+   kind="file"
+   prop-time="2006-05-28T11:24:02.000000Z"/>
+<entry
+   committed-rev="445"
+   name="install.rb"
+   text-time="2006-05-28T11:24:03.000000Z"
+   committed-date="2005-12-06T03:55:40.318993Z"
+   checksum="3773dce53854a282602d79a631a1ff8a"
+   last-author="technoweenie"
+   kind="file"
+   prop-time="2006-05-28T11:24:02.000000Z"/>
+<entry
+   name="generators"
+   kind="dir"/>
+<entry
+   committed-rev="1014"
+   name="README"
+   text-time="2006-05-28T11:24:03.000000Z"
+   committed-date="2006-03-28T07:07:28.572791Z"
+   checksum="643a1b70b4895d184f88646b88c95c4a"
+   last-author="technoweenie"
+   kind="file"
+   prop-time="2006-05-28T11:24:03.000000Z"/>
+</wc-entries>

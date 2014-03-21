@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="2459"
+   name=""
+   committed-date="2006-11-10T15:55:16.892695Z"
+   url="http://svn.techno-weenie.net/projects/plugins/acts_as_attachment/test"
+   last-author="technoweenie"
+   kind="dir"
+   uuid="567b1171-46fb-0310-a4c9-b4bef9110e78"
+   revision="2747"/>
+<entry
+   committed-rev="2459"
+   name="schema.rb"
+   text-time="2007-02-19T10:30:25.000000Z"
+   committed-date="2006-11-10T15:55:16.892695Z"
+   checksum="7d0a6db2167ca64ea042caea19166757"
+   last-author="technoweenie"
+   kind="file"
+   prop-time="2007-02-19T10:30:25.000000Z"/>
+<entry
+   committed-rev="2449"
+   name="abstract_unit.rb"
+   text-time="2007-02-19T10:30:25.000000Z"
+   committed-date="2006-11-09T04:34:23.956557Z"
+   checksum="c4a5e6f40f8d6131287979459dd9d517"
+   last-author="technoweenie"
+   kind="file"
+   prop-time="2007-02-19T10:30:25.000000Z"/>
+<entry
+   committed-rev="717"
+   name="database.yml"
+   text-time="2007-02-19T10:30:25.000000Z"
+   committed-date="2006-02-09T18:17:34.395933Z"
+   checksum="1d98b40d1fc097dbffa4f05ac125d4e8"
+   last-author="technoweenie"
+   kind="file"
+   prop-time="2007-02-19T10:30:25.000000Z"/>
+<entry
+   committed-rev="2449"
+   name="file_attachment_test.rb"
+   text-time="2007-02-19T10:30:25.000000Z"
+   committed-date="2006-11-09T04:34:23.956557Z"
+   checksum="44ed4271e19438ea0e0aa4cf4b03dc13"
+   last-author="technoweenie"
+   kind="file"
+   prop-time="2007-02-19T10:30:25.000000Z"/>
+<entry
+   name="fixtures"
+   kind="dir"/>
+<entry
+   committed-rev="2459"
+   name="attachment_test.rb"
+   text-time="2007-02-19T10:30:25.000000Z"
+   committed-date="2006-11-10T15:55:16.892695Z"
+   checksum="ca48690e0ab7cc3c66cc656cf345bfa2"
+   last-author="technoweenie"
+   kind="file"
+   prop-time="2007-02-19T10:30:25.000000Z"/>
+<entry
+   committed-rev="2449"
+   name="image_attachment_test.rb"
+   text-time="2007-02-19T10:30:25.000000Z"
+   committed-date="2006-11-09T04:34:23.956557Z"
+   checksum="d76c4d4a34b2fcc8c2cae5647665818a"
+   last-author="technoweenie"
+   kind="file"
+   prop-time="2007-02-19T10:30:25.000000Z"/>
+<entry
+   committed-rev="2449"
+   name="validation_test.rb"
+   text-time="2007-02-19T10:30:25.000000Z"
+   committed-date="2006-11-09T04:34:23.956557Z"
+   checksum="c7c24d1ba12fee243e8319e28cd9431e"
+   last-author="technoweenie"
+   kind="file"
+   prop-time="2007-02-19T10:30:25.000000Z"/>
+<entry
+   committed-rev="2449"
+   name="content_type_test.rb"
+   text-time="2007-02-19T10:30:25.000000Z"
+   committed-date="2006-11-09T04:34:23.956557Z"
+   checksum="63ae80d1c83e0dc1b5c3a2e8875c71dd"
+   last-author="technoweenie"
+   kind="file"
+   prop-time="2007-02-19T10:30:25.000000Z"/>
+</wc-entries>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="64"
+   name=""
+   committed-date="2006-04-24T20:57:41.246776Z"
+   url="http://opensvn.csie.org/rails_file_column/plugins/file_column/trunk"
+   last-author="skanthak"
+   kind="dir"
+   uuid="6a5db2c9-b104-0410-84e5-917aad89f9d9"
+   prop-time="2006-05-28T11:22:03.000000Z"
+   revision="64"/>
+<entry
+   name="test"
+   kind="dir"/>
+<entry
+   committed-rev="37"
+   name="Rakefile"
+   text-time="2006-05-28T11:22:03.000000Z"
+   committed-date="2005-11-23T21:23:31.548923Z"
+   checksum="1eeb831359c4944347b36b09f49e87f6"
+   last-author="skanthak"
+   kind="file"
+   prop-time="2006-05-28T11:22:02.000000Z"/>
+<entry
+   committed-rev="55"
+   name="TODO"
+   text-time="2006-05-28T11:22:03.000000Z"
+   committed-date="2006-01-22T22:25:40.517047Z"
+   checksum="12c83d1eb343782804cdf9d95c139bb3"
+   last-author="skanthak"
+   kind="file"
+   prop-time="2006-05-28T11:22:02.000000Z"/>
+<entry
+   committed-rev="58"
+   name="init.rb"
+   text-time="2006-05-28T11:22:03.000000Z"
+   committed-date="2006-02-19T21:04:43.700496Z"
+   checksum="51934dc76d127c5b242f677751636df0"
+   last-author="skanthak"
+   kind="file"
+   prop-time="2006-05-28T11:22:02.000000Z"/>
+<entry
+   name="lib"
+   kind="dir"/>
+<entry
+   committed-rev="64"
+   name="CHANGELOG"
+   text-time="2006-05-28T11:22:03.000000Z"
+   committed-date="2006-04-24T20:57:41.246776Z"
+   checksum="bc87411160211fb58e3a8cc3c3448ca0"
+   last-author="skanthak"
+   kind="file"
+   prop-time="2006-05-28T11:22:03.000000Z"/>
+<entry
+   committed-rev="10"
+   name="README"
+   text-time="2006-05-28T11:22:03.000000Z"
+   committed-date="2005-11-04T02:22:36.650994Z"
+   checksum="c2957d66d295b55ce66368cde9889a1e"
+   last-author="kyle"
+   kind="file"
+   prop-time="2006-05-28T11:22:03.000000Z"/>
+</wc-entries>

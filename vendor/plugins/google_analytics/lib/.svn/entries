@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="23"
+   name=""
+   committed-date="2006-05-24T07:28:09.381611Z"
+   url="http://svn.rubaidh.com/plugins/trunk/google_analytics/lib"
+   last-author="mathie"
+   kind="dir"
+   uuid="d6511e60-4710-0410-a7ce-ed01584c9eb4"
+   revision="23"/>
+<entry
+   name="rubaidh"
+   kind="dir"/>
+</wc-entries>

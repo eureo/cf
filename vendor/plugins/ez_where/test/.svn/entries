@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="82"
+   name=""
+   committed-date="2006-03-19T18:32:55.580831Z"
+   url="http://opensvn.csie.org/ezra/rails/plugins/dev/ez_where/test"
+   last-author="loob2"
+   kind="dir"
+   uuid="e8081bd4-020a-0410-a7c4-8039225954a7"
+   repos="http://opensvn.csie.org/ezra"
+   prop-time="2006-08-19T14:52:39.000000Z"
+   revision="146"/>
+<entry
+   committed-rev="31"
+   name="test_helper.rb"
+   text-time="2006-08-19T14:52:39.000000Z"
+   committed-date="2006-02-03T20:14:24.068749Z"
+   checksum="f0b172b5c64632715f29fecb42948ce1"
+   last-author="loob2"
+   kind="file"
+   prop-time="2006-08-19T14:52:38.000000Z"/>
+<entry
+   committed-rev="19"
+   name="schema.rb"
+   text-time="2006-08-19T14:52:39.000000Z"
+   committed-date="2006-01-30T21:54:18.100838Z"
+   checksum="72bd6f75927b1e68d81266b397f9bae8"
+   last-author="loob2"
+   kind="file"
+   prop-time="2006-08-19T14:52:38.000000Z"/>
+<entry
+   committed-rev="12"
+   name="database.yml"
+   text-time="2006-08-19T14:52:39.000000Z"
+   committed-date="2006-01-29T11:00:04.778786Z"
+   checksum="1315a4f5da3d6c8204132ae20f215c9a"
+   last-author="loob2"
+   kind="file"
+   prop-time="2006-08-19T14:52:38.000000Z"/>
+<entry
+   name="fixtures"
+   kind="dir"/>
+<entry
+   committed-rev="82"
+   name="ez_where_tests.rb"
+   text-time="2006-08-19T14:52:39.000000Z"
+   committed-date="2006-03-19T18:32:55.580831Z"
+   checksum="adf4672365c53c143ff51a7a93c50671"
+   last-author="loob2"
+   kind="file"
+   prop-time="2006-08-19T14:52:39.000000Z"/>
+</wc-entries>

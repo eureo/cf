@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="64"
+   name=""
+   committed-date="2006-04-24T20:57:41.246776Z"
+   url="http://opensvn.csie.org/rails_file_column/plugins/file_column/trunk/test"
+   last-author="skanthak"
+   kind="dir"
+   uuid="6a5db2c9-b104-0410-84e5-917aad89f9d9"
+   prop-time="2006-05-28T11:22:02.000000Z"
+   revision="64"/>
+<entry
+   committed-rev="53"
+   name="connection.rb"
+   text-time="2006-05-28T11:22:02.000000Z"
+   committed-date="2006-01-01T19:53:31.773189Z"
+   checksum="fa1e0aedb473acd3f9782029d7efafeb"
+   last-author="skanthak"
+   kind="file"
+   prop-time="2006-05-28T11:21:59.000000Z"/>
+<entry
+   committed-rev="58"
+   name="abstract_unit.rb"
+   text-time="2006-05-28T11:22:02.000000Z"
+   committed-date="2006-02-19T21:04:43.700496Z"
+   checksum="bf19d87853d41f5b7bd1ad996241b619"
+   last-author="skanthak"
+   kind="file"
+   prop-time="2006-05-28T11:21:59.000000Z"/>
+<entry
+   committed-rev="58"
+   name="magick_view_only_test.rb"
+   text-time="2006-05-28T11:22:02.000000Z"
+   committed-date="2006-02-19T21:04:43.700496Z"
+   checksum="6e99955f4cf3cdd0884a1e7d1c274e49"
+   last-author="skanthak"
+   kind="file"
+   prop-time="2006-05-28T11:21:59.000000Z"/>
+<entry
+   name="fixtures"
+   kind="dir"/>
+<entry
+   committed-rev="58"
+   name="file_column_helper_test.rb"
+   text-time="2006-05-28T11:22:02.000000Z"
+   committed-date="2006-02-19T21:04:43.700496Z"
+   checksum="bc36f995b5e95d59a2ca9d8bcecc90af"
+   last-author="skanthak"
+   kind="file"
+   prop-time="2006-05-28T11:22:02.000000Z"/>
+<entry
+   committed-rev="64"
+   name="magick_test.rb"
+   text-time="2006-05-28T11:22:02.000000Z"
+   committed-date="2006-04-24T20:57:41.246776Z"
+   checksum="089d697cd879d1ff7e368adb78d92886"
+   last-author="skanthak"
+   kind="file"
+   prop-time="2006-05-28T11:22:02.000000Z"/>
+<entry
+   committed-rev="59"
+   name="file_column_test.rb"
+   text-time="2006-05-28T11:22:02.000000Z"
+   committed-date="2006-04-08T16:38:32.442297Z"
+   checksum="aee1959a718bc35c130d823bf1f65c72"
+   last-author="skanthak"
+   kind="file"
+   prop-time="2006-05-28T11:22:02.000000Z"/>
+<entry
+   name="public"
+   kind="dir"/>
+</wc-entries>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="23"
+   name=""
+   committed-date="2006-05-24T07:28:09.381611Z"
+   url="http://svn.rubaidh.com/plugins/trunk/google_analytics"
+   last-author="mathie"
+   kind="dir"
+   uuid="d6511e60-4710-0410-a7ce-ed01584c9eb4"
+   revision="23"/>
+<entry
+   name="test"
+   kind="dir"/>
+<entry
+   committed-rev="10"
+   name="Rakefile"
+   text-time="2006-05-28T11:22:57.000000Z"
+   committed-date="2006-05-09T11:07:48.247947Z"
+   checksum="84ad5afef09ec63860d4c4252c41c498"
+   last-author="mathie"
+   kind="file"
+   prop-time="2006-05-28T11:22:57.000000Z"/>
+<entry
+   committed-rev="14"
+   name="init.rb"
+   text-time="2006-05-28T11:22:57.000000Z"
+   committed-date="2006-05-09T14:26:35.737420Z"
+   checksum="6d46ee7678664997c18c51f88217a5bf"
+   last-author="mathie"
+   kind="file"
+   prop-time="2006-05-28T11:22:57.000000Z"/>
+<entry
+   name="lib"
+   kind="dir"/>
+<entry
+   committed-rev="15"
+   name="README"
+   text-time="2006-05-28T11:22:57.000000Z"
+   committed-date="2006-05-09T14:31:13.307572Z"
+   checksum="b4aacf37d475a143fdf9ca858aa91bc2"
+   last-author="mathie"
+   kind="file"
+   prop-time="2006-05-28T11:22:57.000000Z"/>
+</wc-entries>

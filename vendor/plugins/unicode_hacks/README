@@ -1,0 +1,75 @@
+== Multibyte Support for Rails - Easing the Pain of Unicode in RoR Development
+
+A relatively painless way to make Rails love the 5 billions of people more. This README gives an overview of the features of this plugin. However we urge you to take 10 minutes read the UNICODE_PRIMER if you're new to internationalization and Unicode to understand some important mechanics of the solution.
+
+All current implementations 
+
+=== Supported versions of the standard
+
+The Unicode standard has versions, which are assigned when substantial changes are made.
+
+Currently we support Unicode version 4.1, support will be added for version 5.0.0
+when more documentation is available. Additionally, binary backends (the ones written in C) might support an older
+version of the standard (for instance, ICU has not yet been updated by IBM for Unicode 5.0.0).
+
+=== Prerequisites
+
+Multibyte support for Rails works without any external libraries, however you can increase the speed and efficiency of the plugin substantially by installing one of the following unicode backends:
+
+==== The unicode gem
+
+The unicode gem written by Yoshida Masato is currently the easiest and most lightweight backend at the moment.
+
+  gem install unicode
+
+The current unicode gem has old unicode tables and thus fails some of our tests. This should be fixed in the future.
+
+==== UTF8Proc
+
+An alternative is Libutf8proc, but you will have to compile it manually (it's not yet available as a gem).
+UTF8Proc conforms to the Unicode 4.1 standard.
+
+http://www.flexiguided.de/publications.utf8proc.en.html
+
+==== UCI4R
+
+ICU4R are ruby bindings the ICU - the International Components For Unicode. It's a large set of libraries to support Unicode, internationalization and localization. It provides some additional locale-dependent operations
+such as transliteration and proper collation (sorting), as well as iterators for sentences, words and chars.
+
+http://www.ibm.com/software/globalization/icu/
+
+After installing the library you will need the Ruby bindings by Nikolai Lugovoi, available as a gem:
+
+  gem install icu4r
+
+The plugin will automatically choose the fastest and most feature-rich backend on your server. ICU4R is currently the best one, but it won't be available on most systems (especially on shared servers).
+
+=== Unicode support on the String class
+
+ActiveSupport::Multibyte introduces Unicode handling for Ruby strings through the use of the String#chars accessor. The method works as a proxy for the standard Ruby string functions. This proxy will allow you to use the string as if it was a character array, the underlying implementation preserves the encodedd byte string for maximum interoperability.
+
+  name = 'Claus Müller'
+  puts name.reverse #=> rell??M sualC
+  name.length #=> 13
+  
+  puts name.chars.reverse #=> rellüM sualC
+  name.chars.length #=> 12
+
+All the methods on the chars proxy class will return a Chars object, this allows method chaining on the result of any of the methods. The Char object tries to be as interchangeable with String objects as possible: sorting and comparing between String and Char work like expected. The ++bang!++ methods change the internal byte string representation in the Chars object. Interoperability problems can be resolved easily with a to_s call.
+
+When using the proxy you can be sure that you will never damage a string by slicing it improperly.
+
+Chars objects can freely be used in Rails views, because ERB does implicit coercion of all objects to strings.
+
+In addition, the Chars object will forward all method calls which don't have to be specifically altered to the underlying String.
+
+*The Chars object can be used just as a conventional Ruby string, and has the same API*
+
+=== Changes to the controllers
+
+You get an additional macro, +normalize_unicode_params+, for your controllers. By using the macro you can force all incoming
+strings to one normalization form. See ActionController::Normalization for details.
+
+=== Changes to the database connection
+
+At the start of every controller action, the database client driver is forced into "UTF8 mode". No libraries we are aware of reconfigure the client encoding properly on a database reconnect, so we force it on every request.

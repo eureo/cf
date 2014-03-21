@@ -1,0 +1,261 @@
+== Unicode Guide to Rails
+
+This guide explains some concepts and implementation details you *need to know* to use
+ActiveSupport::Multibyte.
+
+A programmer can't support Unicode in an application without knowing some of the details of the standard.
+
+=== Unicode Primer in One Paragraph
+
+Unicode differs from normal character sets and encodings because it provides a complete character level
+text processing system. In Unicode all characters are represented by a number, which we call a
+codepoint. Text is a sequence of these codepoints. When text is displayed the glyphs (images)
+corresponding to the codepoints are found in the font(s) and displayed on the screen.
+
+The Unicode standard describes a number of encodings to store Unicode text in a computer system such as UTF-8,
+UTF-16 and UTF-32. Unicode strings in Ruby are best stored in UTF-8 (this is also the most
+interoperable encoding), so we will limit our discussion to UTF-8.
+
+It sums up to a handful of rules:
+
+* Never break other people's text
+* Always normalize strings before you compare or measure length
+* Never stop thinking when working with Unicode data
+
+=== String is for bytestrings
+
+ASCII strings are very straightforward because there are less than 256 characters, which means that
+every character can be encoded with just one byte. The first 128 Unicode codepoints correspond to the
+ASCII characters and are encoding in the first byte in UTF-8. This means that ASCII text is also valid
+UTF-8 text. Characters outside of the ASCII standard can take up to 6 bytes (4 in practice).
+
+ Letter ASCII byte  UTF-8 bytes  Unicode name
+ ------ ----------  -----------  ------------
+ a      97          97           LATIN SMALL LETTER A
+ ë      -           171 195      LATIN SMALL LETTER E WITH DIAERESIS
+
+In the table we can see that the letter A is encoded in both ASCII and UTF-8 as 97, the letter E with
+diaeresis can't be represented in ASCII and is two bytes long in UTF-8. Because characters can take up
+more that one byte normal bytestring operations don't work anymore.
+
+ name = "Martin Müller"
+ name.length #=> 14, one too many
+ name[0..8] #=> "Martin M\303", you damaged a codepoint
+
+Ruby splits codepoints in half and doesn't know how long our strings really are. Now think about what
+this does to languages which are encoded entirely in multiple bytes per character. Putting UTF-8
+encoded strings in bytestrings isn't a problem in itself, you just have to make sure you don't break
+them. This leads to our first Rule Of Thumb:
+
+*ROT: Never break other people's text*
+
+There are some ways to work around the bytestring operations in Ruby using the regular expression
+engine and other functionality, but they aren't very intuitive and require some knowledge about UTF-8
+encoded strings. Certain operations are hard or impossible to do in Ruby right now: Unicode
+normalization, upcase / downcase and sorting.
+
+Note that UTF-8 can be a little confusing because as long as you keep working with ASCII strings
+exclusively you can still use the byte-based operations. However you risk actively damagind text
+as soon as some multibyte characters appear in the strings you are processing (which is bound to happen
+in the context of a globally available Web application).
+
+ Invalid UTF-8 sequences will make every Web-service backend throw an error, and damaged codepoints
+ will display as ugly question marks or boxes in your HTML!
+
+=== Normalization forms
+
+Not all characters in Unicode are letters, we also have: 26 forms of whitespace, text direction
+characters, a whole array of quotation marks, fraction characters, mathematical figures and so on. The
+most problematic of these are the combining sequences. A large group of characters in Unicode exist in
+two forms: composite form and combining sequence form. Let's take the letter ë as an example again. It
+can be represented in two ways, either as the LATIN SMALL LETTER E WITH DIAERESIS or the LATIN SMALL
+LETTER E followed by the COMBINING DIAERESIS. In Hangul (Korean) all modern characters have a composite
+and combining form.
+
+    Note that most terminals and rendering engines are notoriously poor
+    in their display of decomposed Unicode sequences
+
+If you want to compare Unicode strings at the codepoint level, you will have to perform normalization.
+Normalization makes sure that all the combining characters are either in composite or combining form.
+There are four forms of normalization in Unicode:
+
+* Decomposed form (normalization form D)
+* Composed form (form C)
+* Compatability variants of both (KD and KC).
+
+The compatability variants are destructive because besides the normal decompositions they also
+decompose some graphically rich characters. For instance the ½ character (VULGAR FRACTION ONE HALF)
+to DIGIT ONE, FRACTION SLASH, DIGIT TWO. From this sequence we can't make up what the original author
+meant, so we've lost semantic information.
+
+The W3C Consortium recommends the form C as the baseline model for web services and other Web-based
+interchange where strings are involved.
+
+The number of characters can easily change in a Unicode string after normalization. The only way to
+measure the same length for canonically equal strings is to normalize them to the same form. We
+recommend using the Normalization Form KC (NFKC) in your average web application (unless you know that
+you will need special display characters such as fractionals and ligatures).
+
+*ROT: "Always normalize strings before you compare or measure length"*
+
+To enable compulsory normalization for all strings in your CGI parameters use the +normalize_params+
+method.
+
+=== Case conversions (upcase and downcase)
+
+Some languages have capital forms for characters, but the codepoints aren't ordered in such a way that
+the capital form of a character can be computed. The Unicode standard provides a mapping for uppercase
+to lowercase and the other way around. However, sometimes (for some languages) the operation is irreversible.
+
+Take German for instance:
+
+    Lowercase   Uppercase
+    =========   =========
+    Straße      STRASSE, there is no uppercase ß
+    
+=== Sorting
+
+Sorting is a difficult problem. Codepoints aren't ordered in such a way that a higher byte means that
+it should appear later in the ordering like in ASCII. There are tables with information on how to sort
+languages, but they become very large if you want to support a lot of languages. And even with these
+tables there is the matter of preference, for instance in English: should we sort the capitals before
+lowercase characters and where do we put the special characters?
+
+Thus Ruby (and this plugin) will use binary sort order, which might not satisfy some languages using
+diacritics (diacritics in Swedish and German, among others, are sorted differently with respect to 
+tha base Latin subset).
+
+Proper Unicode sorting is _always_ locale-dependent, thus most programs and databases implement it separately.
+
+=== How to work with the Unicode plugin
+
+When working with Unicode data, you always have to be on your toes. There are still al lot of choices
+to be made during development. We will look at some common problems and how to work around them.
+
+*ROT: "Never stop thinking when working with Unicode data"*
+
+The Unicode plugin doesn't perform any Unicode related processing if the global variable
+<code>$KCODE</code> isn't set to <code>'u'</code> or <code>'utf-8'</code>. You can set the
+<code>$KCODE</code> anywhere in your code to switch the Unicode processing on or off, if you want to
+use Unicode all through your application set it at the start of <code>environment.rb</code>.
+
+ $KCODE = 'u'
+
+If your system primarily handles non-ASCII data, we recommend normalizing all incoming strings. That way
+you can use all the proxy methods without thinking about normalization first. You can set this either
+globally in <code>application.rb</code> or per controller.
+
+ class WikiController
+    normalize_params :form => 'KC'
+ end
+
+The Unicode plugin defines a new instance method on the string class that returns an
+ActiveSupport::Multibyte::Chars proxy. The proxy 'wraps' the string so you can use the Unicode safe
+methods on the bytestring. If you're not using the <code>icu4r</code> library, the <code>chars</code>
+method is also aliased as <copde>u</code>. All string methods are defined on the proxy, we've also
+defined some extra methods for your convenience.
+
+String length is a problematic notion in Unicode strings. You can count the number of bytes or the
+number of codepoints, and depending on the normalization form, the length of the string will vary. 
+You can also cound characters (called +grapheme clusters+ in the standard), in which case some
+characters will contain more than one codepoint. *Normalization does not convert all combined grapheme
+clusters into one codepoint!*. Note that Unicode, like ASCII, can contain some control characters and
+non-spacing whitespace which you might want to strip out first. The <code>strip</code> method can do
+this for you, just like with normal strings.
+
+*Be aware that you might be getting special Unicode whitespace copy-pasted into your application from programs
+such as InDesign, where thin and hair spaces are used for layout.*
+
+ name = "Martin Müller" name.length #=> 14
+ name.chars.length #=> 13 name.chars.raw_string.length #=> 14
+ name.chars.normalize_D.length #=> 15 name.chars.normalize_KC.length #=> 14
+
+The string operations on the proxy are chainable.
+
+ name.chars.reverse.length #=> 13
+ name.chars.reverse.class #=> ActiveSupport::Multibyte::Chars
+
+The way chaining works is that every method on the proxy that normally returns a String returns a Chars
+object. Most of the times this shouldn't be a problem because the Chars object works almost identical
+to a String object. However, some libraries might expect the ++length++ method to return the
+number of bytes, or check explicitly for the String class (bad!). In those cases use ++to_s++
+to pass a string. Expressions in views typically don't have this problem because they get joined with
+strings, which implicitly calls ++to_s++.
+
+If you have a byte_offset and you want to translate it to offset in codepoints, you can use
+translate_offset, which will convert the offset in bytes to a safe offset in Unicode codepoints.
+All the methods like slice and split do this for you.
+
+ name.chars.translate_offset(8) #=> 8
+ name.chars.translate_offset(9) #=> 8
+ name.chars[0..8] #=> "Martin Mü"
+
+If you want to normalize the string manually, you can use the normalize methods. This is also a good
+example of how some characters get decomposed.
+
+ quarter = [0xBC].pack('U*') # The character VULGAR FRACTION ONE QUARTER which has codepoints 0xBC
+ item = "#{quarter} liter" # Put it in a string item.chars.normalize_D #=> "¼ liter"
+ item.chars.normalize_KD #=> "1⁄4 liter"
+ item.chars.normalize_C #=> "¼ liter"
+ item.chars.normalize_KC #=> "1⁄4 liter"
+
+The only string operation that is not fully Unicode aware is the +<=>+ method that takes care of
+comparing objects for sorting, this just falls back to way Ruby sorts objects. Like we mentioned above,
+sorting is basically impossible to handle without knowing the language we are targeting (and it's
+alphabet), so it's outside of our scope for now. The easiest solution is to do all the sorting in the
+database. Almost all databases engines have Unicode aware sorting algorithms for a variety of
+languages. Please consult the documentation of your database and look for *collation*.
+
+For more information about the Char proxy, look at the API documentation. You can generate the API
+documentation from the plugin with +rake doc+.
+
+=== But that's not all
+
+In order for Unicode to stay Unicode you need your whole toolchain to keep the bytes intact. That means
+that from the browser, through proxies, through your webserver, through rails and into the database
+everything has to be either left alone or handled as Unicode. The same goes for data from the database
+to the browser. In order to do this we need to do some things, and guess what? The Unicode plugin does
+most of that for you, it sets the encoding of the database client driver to UTF-8 and adds
+charset=utf-8 to your headers when you're sending text. So what's left for you to do?
+
+ * Make sure your database and tables use UTF-8 encoding throughout (and collation if you're
+interested) * Make sure you normalize incoming data before you process it. Preferably at the gate
+(where text gets into your system). * Make sure you use the Chars proxy when doing string operations
+
+SQLite3 databases are always UTF-8 unless you specify otherwise. In MySQL you have to alter
+the database configuration to create UTF-8 tables by default.
+
+ ALTER DATABASE app_dev DEFAULT CHARACTER SET utf8;
+
+In PostgreSQL you have to make sure locale support was enabled during compilation and then set the
+locale for your postmaster (the user running the server), in most unix/linux variants you can do this
+by setting two variables in your environment.
+
+ export LC_CTYPE=utf-8
+ export LC_COLLATE=utf-8
+
+You can optionally alter the collation by using the language subcomponent of the locale, as in
++en_US.UTF-8+ or +ru_RU.UTF-8+
+
+=== Speeding things up
+
+The unicode plugin implements a number of backends for handling encoded strings. At initialization it
+tries to load a number of compiled Ruby extensions and falls back on a pure ruby implementation if none
+are present. The README of the plugin lists all the extensions you can use. When you've installed one
+of the extensions and you want to force a certain handler you can do so in the Rails configuration,
+most of the times this isn't necessary.
+
+ ActiveSupport::Multibyte.handler = :UTF8HandlerPure
+
+=== The payoff
+
+Now you can finally use a skull in your text.
+
+ skull = [0x2620].pack('U*') puts skull
+
+=== Further reading and assistance
+
+http://www.joelonsoftware.com/articles/Unicode.html
+
+If you want to discuss multibyte support for Ruby on Rails, please visit IRC #multibyte_rails on
+irc.freenode.net

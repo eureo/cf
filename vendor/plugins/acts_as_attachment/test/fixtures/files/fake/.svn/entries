@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="984"
+   name=""
+   committed-date="2006-03-09T17:31:59.042133Z"
+   url="http://svn.techno-weenie.net/projects/plugins/acts_as_attachment/test/fixtures/files/fake"
+   last-author="streadway"
+   kind="dir"
+   uuid="567b1171-46fb-0310-a4c9-b4bef9110e78"
+   revision="2747"/>
+<entry
+   committed-rev="984"
+   name="rails.png"
+   text-time="2007-02-19T10:30:25.000000Z"
+   committed-date="2006-03-09T17:31:59.042133Z"
+   checksum="8ca9084fc8140aecce9dbe0b017ed3af"
+   last-author="streadway"
+   kind="file"
+   prop-time="2007-02-19T10:30:25.000000Z"/>
+</wc-entries>

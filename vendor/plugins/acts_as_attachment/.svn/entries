@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="2734"
+   name=""
+   committed-date="2007-02-09T07:11:49.212170Z"
+   url="http://svn.techno-weenie.net/projects/plugins/acts_as_attachment"
+   last-author="technoweenie"
+   kind="dir"
+   uuid="567b1171-46fb-0310-a4c9-b4bef9110e78"
+   prop-time="2007-02-19T10:30:26.000000Z"
+   revision="2747"/>
+<entry
+   name="test"
+   kind="dir"/>
+<entry
+   committed-rev="717"
+   name="Rakefile"
+   text-time="2007-02-19T10:30:26.000000Z"
+   committed-date="2006-02-09T18:17:34.395933Z"
+   checksum="4b1b310d9b1d88f8f31ab61b5711311b"
+   last-author="technoweenie"
+   kind="file"
+   prop-time="2007-02-19T10:30:25.000000Z"/>
+<entry
+   committed-rev="1270"
+   name="init.rb"
+   text-time="2007-02-19T10:30:26.000000Z"
+   committed-date="2006-06-23T22:16:47.904786Z"
+   checksum="729bcbd806bef5a78424e6d0072a8725"
+   last-author="technoweenie"
+   kind="file"
+   prop-time="2007-02-19T10:30:25.000000Z"/>
+<entry
+   name="lib"
+   kind="dir"/>
+<entry
+   committed-rev="1166"
+   name="meta.yml"
+   text-time="2007-02-19T10:30:26.000000Z"
+   committed-date="2006-05-28T17:54:21.329969Z"
+   checksum="4b21543fe191f7e0204f9d97e2f686ac"
+   last-author="technoweenie"
+   kind="file"
+   prop-time="2007-02-19T10:30:25.000000Z"/>
+<entry
+   committed-rev="745"
+   name="install.rb"
+   text-time="2007-02-19T10:30:26.000000Z"
+   committed-date="2006-02-11T02:17:27.124427Z"
+   checksum="3773dce53854a282602d79a631a1ff8a"
+   last-author="technoweenie"
+   kind="file"
+   prop-time="2007-02-19T10:30:25.000000Z"/>
+<entry
+   name="generators"
+   kind="dir"/>
+<entry
+   committed-rev="1470"
+   name="README"
+   text-time="2007-02-19T10:30:26.000000Z"
+   committed-date="2006-07-30T15:50:33.730458Z"
+   checksum="5abadc015cb95fb2f5f4650f0a70c6fa"
+   last-author="technoweenie"
+   kind="file"
+   prop-time="2007-02-19T10:30:26.000000Z"/>
+</wc-entries>

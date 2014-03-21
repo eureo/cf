@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="3900"
+   name=""
+   committed-date="2006-03-16T17:48:31.045435Z"
+   url="http://dev.rubyonrails.org/svn/rails/plugins/exception_notification"
+   last-author="minam"
+   kind="dir"
+   uuid="5ecf4fe2-1ee6-0310-87b1-e25e094e27de"
+   revision="4371"/>
+<entry
+   committed-rev="2811"
+   name="init.rb"
+   text-time="2006-05-28T11:25:18.000000Z"
+   committed-date="2005-10-29T15:16:10.495234Z"
+   checksum="d68a35cf6df012c7fd6562da6355a201"
+   last-author="david"
+   kind="file"
+   prop-time="2006-05-28T11:25:18.000000Z"/>
+<entry
+   name="lib"
+   kind="dir"/>
+<entry
+   name="views"
+   kind="dir"/>
+<entry
+   committed-rev="2822"
+   name="README"
+   text-time="2006-05-28T11:25:18.000000Z"
+   committed-date="2005-10-30T00:00:58.572737Z"
+   checksum="fe84727e1adb78f3b7c59207d612720b"
+   last-author="minam"
+   kind="file"
+   prop-time="2006-05-28T11:25:18.000000Z"/>
+</wc-entries>
