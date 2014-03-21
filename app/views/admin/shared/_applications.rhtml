@@ -1,0 +1,18 @@
+<div id="applications">
+  <ul>
+    <li class="home"><%= link_to l("HOME"), :controller => "/admin", :action => "index" %></li>
+    
+    <% restrict_to "(cms | cms_admin)" do %>
+      <li class="pages"><%= link_to l("PAGES"), :controller => "/admin/cms/pages", :action => "index" %></li>
+    <% end -%>
+
+		<% restrict_to "(email_admin | email)" do -%>
+    <li class="newsletter"><%= link_to l("EMAILS"), :controller => "/admin/newsletter/newsletter", :action => "index" %></li>
+    <% end -%>
+        
+    <% restrict_to "admin" do -%>
+      <li class="user"><%= link_to l("USERS"), :controller => "/admin/user/user", :action => "index" %></li>
+    <% end -%>
+      
+  </ul>
+</div>

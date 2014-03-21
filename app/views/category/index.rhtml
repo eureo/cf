@@ -1,0 +1,8 @@
+<h1 class="first">Vivre en Allemagne</h1>
+
+<% for article in @articles %>
+<div class="article">
+  <h2><%= link_to article.title, article_path(article) %></h2>
+  <%= read_more(article.excerpt_html || "", article_path(article), "lire la suite") %>
+</div>
+<% end %>

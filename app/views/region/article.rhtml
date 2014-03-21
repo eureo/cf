@@ -1,0 +1,15 @@
+<%= breadcrumbs_regional_article(@article) %>
+
+<% unless @article.nil? -%>
+  <h1 class="first"><%= @article.title %></h1>
+  <%= @article.excerpt_html %>
+  <%= @article.body_html %>
+  
+  
+  <div class="fb-comments" data-href="<%= regional_article_url(@article) %>" data-num-posts="10" data-width="520"></div>
+
+  <% content_for(:head) do %>
+    <meta property="fb:app_id" content="189695031095770">
+  <% end %>
+  
+<% end -%>

@@ -1,0 +1,41 @@
+<div id="main">
+	
+	<h1><%= l('Newsletter') %></h1>
+
+	<table cellpadding="0" cellspacing="0">
+		<thead>
+  		<tr>
+    		<th><%= l('SUBJECT') %></th>
+    		<th><%= l('ACTIONS') %></th>
+  		</tr>
+		</thead>
+		<tbody>
+			<% for newsletter in @newsletters %>
+	  	<tr>
+	    	<td><%= link_to newsletter.subject, :action => "show", :id => newsletter  %></td>
+	    	<td>
+	      	<%= link_to l("edit"), :action => "edit", :id => newsletter %>, 
+					<%= link_to l("preview"), preview_newsletter_url(newsletter) %>,
+					<%= button_to l("publish"), { :action => "publish", :id => newsletter }, :confirm => "Are you sure ?"%>
+	      	<%= button_to l("delete"), { :action => "delete", :id => newsletter }, :confirm => "Are you sure ?" %>
+	    	</td>
+	  	</tr>
+			<tr>
+				<td colspan="2" class="current_cached_page"><%= show_current_cached_page(newsletter) %></td>
+			</tr>
+			<% end %>
+			<% if @newsletters.nil? or @newsletters.size == 0%>
+			<tr>
+				<td colspan="3"><%= l('No newsletter') %></td>
+			</tr>
+			<% end %>
+		</tbody>
+	</table>
+
+</div>
+
+<div id="sidebar">
+	<ul class="button">
+  	<li><%= link_to l("add newsletter"), :action => "new" %></li>
+	</ul>
+</div>

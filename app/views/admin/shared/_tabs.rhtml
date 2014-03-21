@@ -1,0 +1,16 @@
+<% unless @tabs.nil? -%>
+
+<ul>
+  <% 
+    # allow to set a different margin for the first tab
+    first = true 
+  -%>
+  <% @tabs.each do |tab| -%>
+  <li <%= "id=\"first\"" if first %> <%= params[:controller].split('/').last == tab.controller ? " class='current'" : "" %>>
+    <%= link_to l(tab.name).upcase, :controller => tab.controller, :action => tab.action %>
+    </li>
+  <% first = false -%>
+  <% end -%>
+</ul>
+
+<% end -%>

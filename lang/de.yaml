@@ -1,0 +1,201 @@
+file_charset: utf-8
+
+########################################
+# ACTIVATION AND FORGOT PASSWORD
+########################################
+Please activate your new account: Bitte aktivieren Sie Ihr neues Benutzerkonto.
+Your account has been activated!: Ihr Benutzerkonto wurde aktiviert!
+Request to change your password: Aufforderung zum Zurücksetzen Ihres Passwortes.
+Your password has been reset: Ihr Passwort wurde zurückgesetzt.
+
+Thanks for signing up! You will shorthly receive an email in order to activate your account.: Vielen Dank für Ihre Anmeldung. Sie erhalten in Kürze eine Email, um Ihr Benutzerkonto zu aktivieren.
+forgot your password ?: Passwort vergessen?
+Invalid username or password: Ungültiger Benutzername oder Passwort
+Activate Code: Aktivierungscode
+Activate: Aktivierung
+Your account has been activated.: Ihr Benutzerkonto wurde aktiviert.
+Forgot Password: Passwort vergessen?
+A password reset link has been sent to your email address: Ein Link zum Ändern Ihres Passwortes wurde Ihnen per Email gesendet.
+Password reset : Passwort zurücksetzen
+Activation impossible. please check your activation code: Aktivierung nicht möglich. Bitte überprüfen Sie Ihren Aktivierungscode.
+Could not find an user with that email address: Ein Benutzer mit dieser Email-Adresse ist nicht bekannt.
+Password not reset: Passwort nicht zurückgesetzt
+Password mismatch: Falsches Passwort
+Invalid Reset Code entered: Ungültiger Code für das Zurücksetzen
+Sorry - That is an invalid password reset code. Please check your code and try again. (Perhaps your email client inserted a carriage return?: Entschuldigung, aber dieser Code zum Zurücksetzen des Passworts ist nicht korrekt, bitte überprüfen Sie die Eingabe und versuchen Sie es erneut. (Vielleicht wurde versehentlich die ENTER-Taste gedrückt?)
+Email Address: Email Adresse
+Reset Password: Passwort zurückgesetzt
+
+########################################
+# CMS
+########################################
+# application
+HOME: HOME
+PAGES: SEITEN
+USERS: Benutzer
+
+# login
+Login: Login
+Password: Passwort
+Confirm Password: Passwort bestätigen
+Log in: Login
+log in: login
+log out: Logout
+Sign up: Anmelden
+remember me?: Passwort merken
+Password_confirmation: Passwort-Bestätigung
+
+#option-box
+public site: Öffentlicher Bereich der Webseite
+
+
+#title
+home: Home
+Home: Home
+show: Anzeigen
+edit: Verändern
+new category: Neue Kategorie
+
+# tabs
+
+# admin home
+Welcome to the administration side of the site: Willkommen auf der Administratorseite
+There is no on going work: Es gibt keine zu bearbeitenden Artikel
+Your On Going Articles: Ihre zu bearbeitenden Artikel
+ON GOING ARTICLES: Zu bearbeitende Artikel
+You don't have privileges to access this action: Hierfür haben Sie nicht die nötige Berechtigung.
+
+# pages
+Editing article '%s': Beitrag '%s'verändern
+Category: Kategorie
+categories: Kategorien
+Categories: Kategorien
+CATEGORIES: KATEGORIEN
+Title: Titel
+created: erstellt
+published: veröffentlicht
+archived: archiviert
+Author: Autor
+Excerpt: Auszug
+Body: Aufbau
+validate: bestätigen
+cancel: abbrechen
+Images: Bilder
+delete: löschen		
+Add an image:  Bild hinzufügen
+upload: hochladen
+Files: Dateien
+Attach a file: Datei anhängen
+on going: aktuell 
+On Going: Aktuell
+add an article: Artikel hinzufügen
+add a category: Kategorie hinzufügen
+Creating a new article: Neuen Artikel erstellen
+edit: bearbeiten
+publish: veröffentlichen
+unpublish: aus Veröffentlichung nehmen
+archive: archivieren
+unarchive: nicht archivieren
+delete: löschen
+ARTICLES: ARTIKEL
+SETTINGS: EINSTELLUNGEN
+by: durch
+the: den
+Your article was created.: Ihr Artikel wurde erstellt.
+Article was successfully updated.: Artikel erfolgreich hochgeladen.
+Image was successfully uploaded.: Bild erfolgreich hochgeladen.
+Image was successfully deleted.: Bild erfolgreich gelöscht.
+File was successfully uploaded.: Datei erfolgreich hochgeladen.
+File was successfully deleted.: Datei erfolgreich gelöscht.
+Article was successfully published.: Artikel erfolgreich veröffentlicht.
+Article was successfully unpublished.: Veröffentlichung des Artikels erfolgreich zurückgenommen.
+Article was successfully archived.: Artikel erfolgreich archiviert.
+Article was successfully archived and unpublished.: Artikel archiviert und aus Veröffentlichung genommen.
+
+Article was successfully unarchived.: Artikel erfolgreich aus Archiv entfernt.
+
+Article was successfully deleted.: Artikel erfolgreich gelöscht.
+
+Are you sure?: Sind Sie sicher?
+Open the %s to know how to make headers, lists, and more.: Öffnen Sie %s um zu erfahren wie man Header, Listen usw. erstellt.
+syntax guide: Syntax Ratgeber
+Syntax Guide: Syntax Ratgeber
+do that ...: Machen Sie dies ...
+to get that ...: um dies zu erhalten ...
+close the guide: Ratgeber schliessen
+more syntax definition: Weitere Syntaxdefinitionen
+# tags
+separate with space: Durch Leerzeichen trennen
+no tag: kein Tag
+none: kein
+
+# categorie
+Parent: Oberbegriff 
+Name: Name
+delete this category: Diese Kategorie löschen
+This will delete all subcategories and all articles in those categories as well. Do you want to proceed?: Dies wird auch alle Unterbereiche und Artikel dieser Kategorie löschen. Wollen Sie fortfahren?
+New Category: Neue Kategorie
+Articles in this category: Artikel in dieser Kategorie
+On going: Aktuell
+ON GOING: Aktuell
+Published: Veröffentlicht
+PUBLISHED: VERÖFFENTLICHT
+Archived: Archiviert
+ARCHIVED: ARCHIVIERT 
+No articles: Keine Artikel
+Start by adding some categories: Weiter mit neuer Kategorie
+Editing Category '%s': Kategorie '%s' bearbeiten
+Category was successfully created.: Kategorie erfolgreich erstellt
+Category was successfully updated.: Kategorie erfolgreich hochgeladen 
+Category was successfully deleted.: Kategorie erfolgreich gelöscht
+
+
+# search
+search: suchen
+Search: Suchen	
+SEARCH: SUCHEN
+in: in
+
+# user
+User was successfully deleted: Benutzer erfolgreich gelöscht 
+User was successfully updated: Benutzer erfolgreich erneuert
+User's role was updated: Benutzerfunktion erneuert
+User was successfully created:  Benutzer erfolgreich erstellt
+Logged in successfully: Erfolgreich angemeldet
+You have been logged out.: Sie sind nun ausgeloggt
+Thanks for signing up!: Vielen Dank für die Anmeldung
+Editing user '%s':  Benutzer '%s' bearbeiten
+Personal information: Persönliche Information
+Login: Anmeldung
+Password: Passwort
+Confirm: Bestätigung
+users: Benutzer
+users' list: Benutzerliste
+LOGIN: ANMELDUNG
+ROLES: FUNKTION
+ACTIONS: VORGANG
+Do you really want to delete user %s?: Wollen Sie wirklich Benutzer %s löschen?
+add user: Benutzer hinzufügen
+creating user: Benutzer erstellen
+DATA: Daten
+login: Anmeldung
+roles: Funktion
+email: Email
+back: Zurück
+Do you really want to delete role %s?: Wollen Sie wirklich die Funktion %s löschen ?
+add role: Funktion hinzufügen
+creating role: Funktion erstellen
+Title: Titel
+
+# error
+something gone wrong: Ein Problem ist aufgetreten
+can't be blank: Muss ausgefüllt werden
+doesn't match confirmation: entspricht nicht der Bestätigung
+is too short: zu kurz
+is too long: zu lang
+
+# from 28 Oct 2006
+Something gone wrong: Ein Problem ist aufgetreten
+
+yes_: ja
+no_: nein

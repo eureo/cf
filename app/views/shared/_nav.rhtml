@@ -1,0 +1,25 @@
+<ul id="nav">  
+  <% if params[:controller] == "home" %>
+    <li class="current"><a href="/">Accueil</a></li>
+  <% else %>
+    <li><a href="/">Accueil</a></li>
+  <% end %>
+  
+  <% if params[:controller] == "category" %>
+    <li class="current"><%= link_to "Vivre en Allemagne", url_for(:controller => "category") %></li>
+  <% else %>
+    <li><%= link_to "Vivre en Allemagne", url_for(:controller => "category") %></li>
+  <% end %>
+  
+  <% if params[:controller] == "region" %>
+    <li class="current"><a href="<%= url_for(:controller => 'region', :action => 'index') %>">Près de chez vous</a></li>
+  <% else %>
+    <li><a href="<%= url_for(:controller => 'region', :action => 'index') %>">Près de chez vous</a></li>
+  <% end %>
+  
+  <li><a href="<%= ApplicationController::FORUM_URL %>">Forum</a></li>
+  
+  <li><a href="http://forum.connexion-francaise.com/viewforum.php?f=62">Agenda</a></li>
+  
+  <li class='ce'><a target="_blank" href="http://www.connexion-emploi.com">Offres d'emploi</a></li>
+</ul>

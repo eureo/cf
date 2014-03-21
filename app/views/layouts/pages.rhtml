@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= @page_title || 'Connexion Française - Le site des français et francophones en Allemagne' %></title>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+    <%= stylesheet_link_tag "reset", "styles", :media => 'all' %>
+    <%= javascript_include_tag "atom_to_date" %>
+    <%= render :partial => 'shared/javascript' %>
+    <%= yield :head %>
+  </head>
+  <body id="category" class="<%= params[:controller] %>">
+    <%= render :partial => "shared/header" %>
+    <div id="content">
+      <div id="main">
+        <%= render :partial => "shared/nav" %>
+        <div id="center">
+          <%= render :partial => "shared/flash_box" %>
+          <%= yield %>
+        </div>
+      </div>
+      <%= render :partial => "shared/sidebar" %>
+    </div>
+    <%= render :partial => "shared/footer" %>
+  </body>
+</html>

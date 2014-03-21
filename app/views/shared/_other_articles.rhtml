@@ -1,0 +1,11 @@
+<% unless @other_articles.nil? or @other_articles.size == 0 %>
+<div class="cbb orange" id="other_articles">
+	<h2>Autres articles</h2>
+	<p>quelques uns des articles de cette catégorie</p>
+	<ul>
+		<% for article in @other_articles -%>
+		<li><%= link_to article.title, article_url(article) %></li>
+		<% end -%>
+	</ul>
+</div>	
+<% end -%>

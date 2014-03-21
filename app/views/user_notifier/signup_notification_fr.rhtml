@@ -1,0 +1,11 @@
+
+Votre compte a été crée
+  Identifiant: <%= @user.login %>
+  Mot de passe: <%= @user.password %>
+
+Cliquez sur le lien ci-dessous afin de l'activer :
+<%= @url %>
+
+Dans le cas où le lien ci-dessus ne fonctionnerait pas, cliquez sur le lien ci-dessous et renseignez le code d'activation :
+<%= @url_activate %>
+Code d'activation : <%= @user.activation_code %>

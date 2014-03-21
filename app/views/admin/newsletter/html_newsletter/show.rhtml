@@ -1,0 +1,28 @@
+<div id="main">
+	
+	<% unless @html_newsletter.nil? %>
+
+	  <h1><%= @html_newsletter.subject %></h1>
+	
+		<p><strong>lien : </strong><%= link_to newsletter_path(@html_newsletter), newsletter_url(@html_newsletter) %></p>
+
+	  <p><strong>From : </strong><%= @html_newsletter.from %></p>
+
+    <table>
+      <tr>
+        <td colspan="2"><%= @html_newsletter.body_head_html %></td>
+      </tr>
+      <tr>
+        <td><%= @html_newsletter.body_left_html %></td>
+        <td><%= @html_newsletter.body_right_html %></td>
+      </tr>
+      <tr>
+        <td colspan="2"><%= @html_newsletter.body_foot_html %></td>
+      </tr>
+    </table>
+
+	<% end %>
+
+	<p><%= link_to l("Back"), :action => "index" %></p>
+	
+</div>

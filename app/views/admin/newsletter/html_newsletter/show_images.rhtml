@@ -1,0 +1,4 @@
+<% for image in @images -%>
+<% @image = image %>
+<a href="<%= url_for_file_column("image", "name") %>"><%= image_tag url_for_file_column("image", "name", "thumb") %>
+<% end -%>

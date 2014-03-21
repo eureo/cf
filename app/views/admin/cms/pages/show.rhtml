@@ -1,0 +1,78 @@
+<% @page_title = l("show") + ": #{@article.title.downcase}" %>
+
+<div id="main">
+  <%= category_path(@article.category) %>
+
+  <% if @article.published and permit? "cms_admin" -%>
+  <%= render :partial => "admin/shared/tags", :locals => { :tagged => @article } %>  
+  <%= render :partial => "admin/shared/tags_form", :locals => { :tagged => @article } %>  
+  <% end -%>
+
+  <%= load_indicator('yellow') %>
+  
+  <div id="articles">
+    <h1><%= @article.title %></h1>
+    
+    <% unless @article.author.blank? -%>
+    <%= "<h3 class='author'>#{l('by')} #{@article.author}</h3>"%>     
+    <% end -%>
+
+    <% unless @article.created_at.blank? -%>
+    <%= "<h3 class='date'>#{l('created')} #{l('the')} #{@article.created_at.to_formatted_s(:eu_format)}</h3>" %>
+    <% end -%>
+      
+    <% unless @article.published_at.blank? or !@article.published -%>
+    <%= "<h3 class='date'>#{l('published')} #{l('the')} #{@article.published_at.to_formatted_s(:eu_format)}</h3>" %>
+    <% end -%>
+    
+    <% unless @article.archived_at.blank? or !@article.archived -%>
+    <%= "<h3 class='date'>#{l('archived')} #{l('the')} #{@article.archived_at.to_formatted_s(:eu_format)}</h3>" %> 
+    <% end -%>
+
+    <div id="excerpt">
+      <%= @article.excerpt_html || "" %>
+    </div>
+
+    <%= @article.body_html || "" %>
+
+    
+  </div>
+</div>
+
+<div id="sidebar">
+  <ul id="actions" class="button">
+
+    <% if (@article.published and permit? "cms_admin") or @article.published != true -%>
+    <li><%= link_to l('edit'), :action => 'edit', :id => @article %> </li>
+    <% end -%>
+
+    <% if permit? "cms_admin" -%>
+    <% if @article.published -%>
+    <li><%= button_to l('unpublish'), :action => 'unpublish', :id => @article %> </li>
+    <% else -%>
+    <li><%= button_to l('publish'), :action => 'publish', :id => @article %> </li>
+    <% end -%>
+
+    <% if @article.archived -%>
+    <li><%= button_to l('unarchive'), :action => 'unarchive', :id => @article %> </li>
+    <% else -%>
+    <li><%= button_to l('archive'), :action => 'archive', :id => @article %> </li>
+    <% end -%>
+    <li><%= button_to l('delete'), { :action => 'delete', :id => @article}, :confirm => l("Are you sure?") %> </li>
+    <% end -%>
+  </ul>
+
+  <% unless @attachement.nil? -%> 
+  <div id="download">
+    <h3><%= l('download')%></h3>
+    <ul>
+      <% @attachments.each do |attachment| -%>
+      <% @attachment = attachment %>
+      <li>
+      <a href="<%= url_for_file_column("attachment", "file") %>"><%= attachment['file'] %></a>
+      </li>
+      <% end -%>
+    </ul>
+  </div>
+  <% end -%>
+</div>

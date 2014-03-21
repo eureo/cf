@@ -1,0 +1,6 @@
+<% unless @article.nil? -%>
+
+<h1 class="first"><%= @article.title %></h1>
+<%= @article.excerpt_html %>
+<%= @article.body_html %>
+<% end -%>

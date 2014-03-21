@@ -1,0 +1,16 @@
+<p><%= l('Title') %><em class="required">*</em>: <%= f.text_field :title %></p>
+
+<p><%= l('From') %>: <%= f.text_field :from %></p>
+
+<p><%= l('Subject') %><em class="required">*</em>: <%= f.text_field :subject %></p>
+<p><%= l('Head') %>:</p>
+<p><%= f.text_area :body_head %></p>
+
+<p><%= l('Left') %>:</p>
+<p><%= f.text_area :body_left %></p>
+
+<p><%= l('Right') %>:</p>
+<p><%= f.text_area :body_right %></p>
+
+<p><%= l('Foot') %>:</p>
+<p><%= f.text_area :body_foot %></p>

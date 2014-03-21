@@ -1,0 +1,9 @@
+<div id="main">
+	<%= @csv_file.filename %>
+	<ul>
+		<li>nombre emails : <%= @emails_size_before_uniq %></li>
+		<li>nombre emails unique : <%= @emails.size %></li>
+	</ul>
+		
+	<p><%= @emails.join(', ') %></p>
+</div>

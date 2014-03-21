@@ -1,0 +1,13 @@
+<% unless @reaction.errors.empty? -%>
+  <div id="ErrorExplanation">
+    <h2><%= l("something gone wrong") %></h2>
+    <ul>
+    <% @reaction.errors.each do |attr, msg| -%>
+      <li><%= l(msg) %></li>
+    <% end -%>
+    </ul>
+  </div>
+  <div class="clear"></div>
+<% end -%>
+
+<%= render :partial => "form" %>

@@ -1,0 +1,33 @@
+<% @page_title = l("users' list").capitalize %>
+
+<div id="user">
+  
+<h2><%= @page_title %></h2>
+
+<table cellspacing="0" cellpadding="0">
+  <thead>
+    <tr>
+      <th><%= l('LOGIN') %></th>
+      <th><%= l('ROLES') %></th>
+      <th><%= l('ACTIONS') %></th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @users.each do |user| -%>
+    <tr <%= cycle(""," class='odd'") %>>
+        <td><%= link_to user.login, :action => 'show', :id => user %></td>
+        <td><%= display_roles(user.roles.find(:all, :order => 'title')) %></td>
+        <td>
+          <%= link_to l('edit'), :action => 'edit', :id => user %>
+          <% unless user.login == 'admin' -%>
+          &nbsp;|&nbsp;
+          <%= button_to l('delete'), { :action => 'delete', :id => user }, :confirm => l("Do you really want to delete user %s?", user.login) %>
+          <% end -%>
+        </td>
+      </tr>
+    <% end -%>
+  </tbody>
+</table>
+
+<div class="add-user-button"><%= link_to l('add user'), :action => 'new' %></div>
+</div>

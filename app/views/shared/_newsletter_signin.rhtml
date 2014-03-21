@@ -1,0 +1,31 @@
+<div class="cbb orange" id="newsletter">
+	<h2>Recevoir la newsletter</h2>
+	<form method="post" action="/home/newsletter_signin">
+		<p>
+			<input name="mail" type="text" size="35" value="votre email" class="email" />
+		</p>
+		<p>
+			<select name="zonegeo">
+				<option value=""> -- Zone géographique -- </option>
+				<option>Baden-Württemberg</option>
+				<option>Bayern</option>
+				<option>Berlin</option>
+				<option>Bremen</option>
+				<option>Hamburg</option>
+				<option>Hessen</option>
+				<option>Niedersachsen</option>
+				<option>Nordrhein-Westfalen</option>
+				<option>Rheinland-Pfalz</option>
+				<option>Saarland</option>
+				<option>Sachsen</option>
+				<option>Sachsen-Anhalt</option>
+				<option>Schleswig-Holstein</option>
+				<option>Thüringen</option>
+			</select>			
+		</p>
+		<p>
+			<input type="submit" value="envoyer" class="bouton" />
+		</p>
+		<p id="desinscription">Vous ne désirez plus recevoir notre newsletter ? <%= link_to "désinscription", article_url("deinscription-newsletter") %></p>
+	</form>
+</div>

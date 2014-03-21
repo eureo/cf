@@ -1,0 +1,67 @@
+<% @page_title = l('pages').capitalize %>
+
+<div id="main">
+   
+  <% if @unpublished_articles.size > 0 -%>
+    <%= display_articles(@unpublished_articles, {:title => l('on going').upcase, :controller => "/admin/cms/pages"}) %>
+  <% else -%>
+    <p><%= l('There is no on going work') %></p>
+  <% end -%>
+
+  <div id="categories">
+    <table cellpadding="0" cellspacing="0">
+      <thead>
+        <tr>
+          <th colspan="4"><%= l('CATEGORIES') %></th>
+        </tr>
+        <tr>
+          <th>&nbsp;</th>
+          <th><%= l('On Going') %></th>
+          <th><%= l('Published') %></th>
+          <th><%= l('Archived') %></th>
+        </tr>
+      </thead>
+      <tbody>
+        <%= display_root_rows_for_items_summary(@categories, "articles", 
+                                                :options => { :controller => "/admin/cms/categories"}) %>
+      </tbody>
+    </table>
+  </div>
+
+  <div id="categories">
+    <table cellpadding="0" cellspacing="0">
+      <thead>
+        <tr>
+          <th colspan="2"><%= l('TAGS') %></th>
+        </tr>
+        <tr>
+          <th>&nbsp;</th>
+          <th><%= l('Articles') %></th>
+        </tr>
+      </thead>
+      <tbody>
+        <% if @tags.size != 0 %>
+          <% @tags.each do |tag| -%>
+          <tr <%= cycle(""," class='odd'")%>>
+            <td><%= link_to tag.name, :controller => "/admin/cms/pages", :action => "list", :id => tag.name %></td>
+            <td><%= tag.taggings.find_all_by_taggable_type("Article").size %></td>
+          </tr>
+          <% end -%>
+        <% else %>
+          <tr><td><%= l('no tag') %></td><td>&nbsp;</td></tr>
+        <% end %>
+      </tbody>
+    </table>
+  </div>
+
+</div>
+
+<div id="sidebar">
+  <div id="pages-actions">
+    <ul class="button">
+      <li class="add-page-button"><%= link_to l('add an article'), :action => 'new' %></li>
+      <li><%= link_if_permit "cms_admin", l('add a category'), :controller => 'categories', :action => 'new' %></li>
+    </ul>
+  </div>
+
+</div>

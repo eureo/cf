@@ -1,0 +1,28 @@
+<div id="main">
+	
+	<% form_for :newsletter, :url => { :action => "import_to_newsletter" } do |f|  %>
+		<p><label>Select CSV file</label></p>
+		<p>
+		<select name="csv_files[file_id]" >
+			<% for csv_file in @csv_files %>
+			<option value="<%= csv_file.id %>"><%= csv_file.filename %></option>
+			<% end %>
+		</select>
+		</p>
+		<p><label>Select the sector</label></p>		
+		<p>
+		<select name="sectors[sector_id]" >
+			<% for sector in @sectors %>
+			<option value="<%= sector.id %>"><%= sector.name %></option>
+			<% end %>
+		</select>
+		</p>
+		<p>
+			<%= submit_tag l('Add') %>
+	 		<%= link_to l("cancel"), :action => "show", :id => @list %>
+		</p>
+		
+	<% end %>
+		
+	</p>
+</div>

@@ -1,0 +1,39 @@
+<% @page_title = l("creating user") %>
+
+<h2><%= @page_title.capitalize %></h2>
+
+<% unless @user.errors.empty? -%>
+  <div id="ErrorExplanation">
+    <h2><%= l("something gone wrong") %></h2>
+    <ul>
+    <% @user.errors.each do |attr, msg| -%>
+      <li><%=h l(attr.capitalize) %> <%= l(msg) %></li>
+    <% end -%>
+    </ul>
+  </div>
+  <div class="clear"></div>
+<% end -%>
+  
+<%= form_tag :action => :new %>
+<div>
+  <label for="user_login"><%= l('Login') %><em class="required">*</em></label>
+  <%= text_field :user, :login %>
+</div>
+<div>
+  <label for="user_email"><%= l('Email') %><em class="required">*</em></label>
+  <%= text_field :user, :email %>
+</div>
+<div>
+  <label for="user_password"><%= l('Password') %><em class="required">*</em></label>
+  <%= password_field :user, :password %>
+</div>
+<div>
+  <label for="user_confirm"><%= l('Confirm') %><em class="required">*</em></label>
+  <%= password_field :user, :password_confirmation %>
+</div>
+<div>
+  <%= submit_tag l('validate'), :class => "button" %>
+  <%= link_to l('cancel'), :action => 'list' %>
+</div>
+</form>
+

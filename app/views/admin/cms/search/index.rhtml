@@ -1,0 +1,7 @@
+<% @page_title = l('Search') %>
+
+<%= form_tag :action => :result %>
+<label><%= l('search').capitalize %></label>
+<%= text_field_tag "query" %>
+<%= submit_tag l('GO'), :class => "button" %>
+</form>

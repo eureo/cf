@@ -1,0 +1,1 @@
+page.insert_html :before, 'excerpt', :partial => '/admin/shared/syntax_guide'

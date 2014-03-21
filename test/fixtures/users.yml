@@ -1,0 +1,78 @@
+--- 
+quentin:
+  id: 2
+  login: quentin
+  email: quentin@example.com
+  salt: 62a636a58d0648eadf7410aa2e4444866174c96e
+  crypted_password: be61f3ff72492591afe5081857a8ff17a85b21f9 # quentin
+  # crypted_password: "ce2/iFrNtQ8=\n" # quentin, use only if you're using 2-way encryption
+  created_at: <%%= 5.days.ago.to_s :db %>
+  activated_at: <%%= 5.days.ago.to_s :db %> # only if you're activating new signups
+arthur:
+  id: 3
+  login: arthur
+  email: arthur@example.com
+  salt: 55bc51360864c82dcd7ff4bcfec56a8d8e79e751
+  crypted_password: 37ba966058c6f39162e5b537adb516af91cd1fe6 # arthur
+  activation_code: arthurscode # only if you're activating new signups
+  created_at: <%%= 1.days.ago.to_s :db %>
+admin: 
+  salt: 4d098e24b2daed41b4a32ef46436cd5472b8caa1
+  activated_at: 2006-08-24 12:45:35
+  updated_at: 2007-02-19 11:27:26
+  crypted_password: ad89d0fc6213999f8ef702c997f4972daf3af97f
+  activation_code: b854ae7f01385661fecf774a040a90a7b4b59a0b
+  password_reset_code: 
+  id: 1
+  remember_token: a8785fda739e9a15f32da5f71df98c0c4a931d0d
+  login: admin
+  created_at: 2006-08-24 12:45:23
+  email: admin@localhost
+users_004: 
+  salt: fc006068d4e4cee7d71371c2b0b9340360933d8e
+  activated_at: 2006-08-31 07:02:41
+  updated_at: 2007-02-10 19:25:01
+  crypted_password: 36f5e7d628461dca8f180ef82cb4151ef2112993
+  activation_code: 
+  password_reset_code: 
+  id: "8"
+  remember_token: 83605ebd4ce646bd346917c32e7e4f69222248e9
+  login: jerome
+  created_at: 2006-08-30 23:26:35
+  email: jerome.lecot@connexion.emploi.com
+cms_user: 
+  salt: 4424edb74a1036aeb4ae109ce464530d22d9f44b
+  activated_at: 2006-08-31 15:34:24
+  updated_at: 2007-01-24 11:14:32
+  crypted_password: 6cfe35aed4e428a08fb16bf22f1aed4b1888e288
+  activation_code: 
+  password_reset_code: 
+  id: "9"
+  remember_token: c3a8304e59a412b165362f665a43d2ad66915779
+  login: Caroline
+  created_at: 2006-08-31 08:30:11
+  email: cbelot63@yahoo.fr
+franck: 
+  salt: ba44a71ea6356d18059ca5fe109fd020d1fe7575
+  activated_at: 2006-08-26 12:29:50
+  updated_at: 2007-02-19 11:27:20
+  crypted_password: d1e38ee6043583b7223ecb5bddf113b13dd29f92
+  activation_code: 
+  password_reset_code: 
+  id: "6"
+  remember_token: 
+  login: franck
+  created_at: 2006-08-26 05:29:30
+  email: franck.dagostini@gmail.com
+olivier: 
+  salt: 900f379bd54c0a66e04681e228748b1b3429c0f5
+  activated_at: 2006-08-28 07:08:49
+  updated_at: 2007-02-09 16:01:01
+  crypted_password: 87081ee766c3ee982c71f4ddcd0b58af34d815c7
+  activation_code: 
+  password_reset_code: 
+  id: "7"
+  remember_token: 
+  login: olivier
+  created_at: 2006-08-28 00:08:08
+  email: olivier@connexion-francaise.com

@@ -1,0 +1,11 @@
+#user table, #roles table { margin: 20px 0; }
+
+
+#edit-user { float: left; width: 300px; }
+#edit-user h2, #edit-user-roles h2 { font-weight: bold; font-size: 110%; color: #333; }
+#edit-user-roles { float: left; width: 350px; }
+#edit-user-roles fieldset#roles { margin: 0; padding: 0; border: none; background: transparent; }
+#edit-user-roles fieldset#roles div { width: 10em; float: left; }
+#edit-user-roles fieldset#roles p { margin: 5px 0; }
+#edit-user-roles fieldset#roles input { display: inline; }
+#edit-user-roles fieldset#roles label { display: inline; margin-left: 0.5em; }

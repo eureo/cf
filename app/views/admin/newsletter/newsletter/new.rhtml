@@ -1,0 +1,18 @@
+<div id="main">
+
+	<% unless @mailing.nil? -%>
+	  <%= error_messages_for 'mailing', {
+		 	:header => "something gone wrong"
+	  } %>
+	<% end -%>
+	
+
+	<% form_for :mailing, :url => { :action => "new" } do |f| %>
+	  <%= render :partial => "form", :locals => { :f => f } %>
+	  <p>
+	    <%= submit_tag l("Create") %>
+	    <%= link_to l("cancel"), :action => "index" %>
+	  </p>
+	<% end %>
+
+</div>

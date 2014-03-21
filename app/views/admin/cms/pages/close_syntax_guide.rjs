@@ -1,0 +1,2 @@
+page.remove 'syntax_guide'
+page.show 'syntax-guide-toogle'

@@ -1,0 +1,60 @@
+<script type="text/javascript" src="http://www.google.com/jsapi?key=ABQIAAAAIGCMfIYiyGyReY6yzpSsYBQhfOWRLgnDLmcZxfuhQTvDs8abuBRbI_B3FEpuJi4g92GEbmCRExp21Q"></script>
+
+<script language="Javascript" type="text/javascript"> 
+  google.load("jquery", "1.4.2");
+  google.load("feeds", "1",{"nocss": true});
+</script>
+
+<%= javascript_include_tag "pub" %>
+
+<script language="Javascript" type="text/javascript"> 
+  google.load("search", "1");
+  $(function() {    
+    var searchControl = new google.search.SearchControl();
+  
+    var options = new google.search.SearcherOptions();
+    options.setExpandMode(google.search.SearchControl.EXPAND_MODE_OPEN);
+    options.setRoot(document.getElementById("search_results"));
+  
+    var siteSearch = new google.search.WebSearch();
+    siteSearch.setUserDefinedLabel("Connexion Française");
+    siteSearch.setSiteRestriction("connexion-francaise.com");
+  
+    searchControl.addSearcher(siteSearch, options);
+    searchControl.draw(document.getElementById("search"));
+  
+    $("<a class='close' href='#'>fermer</a>")
+      .css("float", "right")
+      .prependTo("#search_results");
+  
+    $(".close").live('click', function(){
+      searchControl.clearAllResults();
+      return false
+    });
+  
+  });  
+</script>
+
+
+<script language="Javascript" type="text/javascript"> 
+  $(function() {    
+    $('table tr:odd').addClass("odd");
+  });
+</script>
+
+<script language="Javascript" type="text/javascript"> 
+  $(function() {    
+    $('#sidebar .box').click(function(){
+      var href = $(this).find("h3 a").attr('href');
+      if(href){
+        window.location.href = href;
+      }
+      return false;
+    });
+  });
+</script>
+
+<script type="text/javascript" src="//www.hellobar.com/hellobar.js"></script>
+<script type="text/javascript">
+    new HelloBar(29425,71001);
+</script>

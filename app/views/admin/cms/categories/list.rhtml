@@ -1,0 +1,30 @@
+<% @page_title = l('categories').capitalize %>
+
+<div id="main">
+  <div id="categories">
+    <% if @categories.children.size == 0 -%>
+      <p><%= l('Start by adding some categories') %></p>
+      <% else -%>
+      <table cellpadding="0" cellspacing="0">
+        <thead>
+          <tr>
+            <th colspan="2"><%= l('CATEGORIES') %></th>
+          </tr>
+        </thead>
+        <tbody>
+          <%= display_category_rows(@categories,{}, :admin => "cms_admin") %>
+        </tbody>
+      </table>
+      <% end -%>
+  </div>
+</div>
+
+<div id="sidebar">
+  <div id="categories-actions">
+    <ul class="button">
+      <li class="add-page-button"><%= link_to l('add an article'), :controller => 'pages', :action => 'new', :category_id => @categories %></li>
+      <li><%= link_if_permit "cms_admin", l('add a category'), :controller => 'categories', :action => 'new' %></li>
+    </ul>
+  </div>
+</div>
+

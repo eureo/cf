@@ -1,0 +1,44 @@
+<%= breadcrumbs_region(@region) %>
+
+<% if @region.is_region? -%>
+
+	<% unless @last_article.nil? -%>
+	<h1 class="first"><%= link_to @last_article.title, regional_article_path(@last_article) %></h1>
+	<%= read_more(@last_article.excerpt_html || "", regional_article_path(@last_article), "lire la suite") %>
+	<% else %>
+	<h1><%= @no_article.title %></h1>
+	<%= @no_article.body_html || "" %>
+	<% end -%>
+	
+	<% @articles.each do |category, articles| -%>
+		<% unless articles.size == 0 -%>
+		<h2><%= link_to category.name, region_path(category) %></h2>
+		<ul>
+			<% for article in articles -%>
+			<li><%= link_to article.title, regional_article_path(article) %></li>
+			<% end -%>
+		</ul>
+		<% end -%>
+	<% end -%>
+
+<% else -%>
+
+	<% unless @first_article.nil? -%>
+	<h1 class="first"><%= link_to @first_article.title, regional_article_path(@first_article) %></h1>
+	<%= read_more(@first_article.excerpt_html || "", regional_article_path(@first_article), "lire la suite") %>
+	<% else %>
+	<p>Aucun article dans cette rubrique</p>
+	<% end -%>
+
+	<% unless @remaining_articles.nil? or @remaining_articles.empty? -%>
+	<h2>Les autres articles de cette catégorie</h2>
+
+	<ul>
+	<% for article in @remaining_articles  -%>
+		<li><%= link_to article.title, regional_article_path(article) %></li>
+	<% end -%>
+	</ul>
+	<% end -%>
+	
+
+<% end -%>

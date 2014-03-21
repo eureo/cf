@@ -1,0 +1,29 @@
+<% @page_title = l('users').capitalize %>
+
+<h2><%= @page_title %></h2>
+
+<table cellspacing="0" cellpadding="0">
+  <thead>
+    <tr>
+      <th><%= l('DATA') %></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><%= l('login') %></td>
+      <td><%= @user.login %></td>
+    </tr>
+    <tr class='odd'>
+      <td><%= l('roles') %></td>
+      <td><%= display_roles(@user.roles) %></td>
+    </tr>
+    <tr>
+      <td><%= l('email') %></td>
+      <td><%= @user.email %></td>
+    </tr>
+  </tbody>
+</table>
+
+<%= link_to l('back'), :action => 'list' %>

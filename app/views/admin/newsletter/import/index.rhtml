@@ -1,0 +1,41 @@
+<div id="main">
+
+	
+	<% if @csv_files.nil? or @csv_files.size > 0 %>
+	<h3><%= l('CSV File of emails') %></h3>
+	
+	<table cellspacing="0" cellpadding="0">
+	  <thead>
+	    <tr>
+	      <th><%= l('CSV FILES') %></th>
+	      <th><%= l('EMAILS') %></th>
+	      <th><%= l('FORMAT') %></th>
+	      <th><%= l('ACTIONS') %></th>
+	    </tr>
+	  </thead>
+	  <tbody>
+	    <% @csv_files.each do |file| -%>
+	    <tr <%= cycle(""," class='odd'") %>>
+	        <td><%= link_to file.filename, :action => 'show', :id => file %></td>
+	        <td><%= file.get_emails.size %></td>
+					<td><%= file.format %></td>
+	        <td>
+						<%= button_to l('delete'), { :action => 'delete', :id => file }, :confirm => l("Are You Sure ?") %>
+					</td>
+	     </tr>
+	    <% end -%>
+	  </tbody>
+	</table>
+		
+	<% else %>
+		<%= l('No csv files. Start to import one') %>
+	<% end %>	
+	
+	
+	<div id="admin">		
+	<ul>
+  	<li class="add-page-button"><%= link_to l("import new csv"), :action => "new" %></li>
+	</ul>
+	</div>
+
+</div>

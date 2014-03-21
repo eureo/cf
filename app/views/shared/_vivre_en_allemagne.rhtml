@@ -1,0 +1,16 @@
+<div class="cbb red italic">
+	<h2>Vivre en Allemagne</h2>
+	<ul>
+		<% count = 0 %>
+		<% for category in @categories -%>
+		<li<%= " class='top' " if count == 0 %>>
+			<% if highlight_category(category) -%>
+				<%= link_to category.name, category_path(category), :class => "current" %>
+			<% else -%>
+				<%= link_to category.name, category_path(category) %>
+			<% end -%>
+		</li>
+		<% count += 1 %>
+		<% end -%>
+	</ul>
+</div>

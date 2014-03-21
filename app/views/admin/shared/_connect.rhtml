@@ -1,0 +1,7 @@
+<div id="connect">
+<% if @current_user.nil? -%>
+  <%= link_to l("log in"), :controller => "/account", :action => "login" %>
+<% else -%>
+  <%= link_to l("log out"), :controller => "/account", :action => "logout" %>
+<% end -%>
+</div>

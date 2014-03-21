@@ -1,0 +1,31 @@
+<% @page_title = l('show') + ": #{@categories.name}" %>
+
+<div id="main">
+  
+  <%= category_path(@categories) %>
+  
+  <% unless @categories.children.size == 0 -%>
+  <div id="categories">
+    <h2><%= l('CATEGORIES') %></h2>
+    <%= display_category_tree(@categories, {}, { :action => "show", :controller => "categories"}) %>
+  </div>
+  <% end -%>
+
+  <h2><%= l('Articles in this category') %></h2>
+  <% if (@articles_not_yet_published.size + @articles_published.size + @articles_archived.size) > 0 -%>
+    <%= display_articles(@articles_not_yet_published, :title => l('ON GOING'), :controller => 'pages') %>
+    <%= display_articles(@articles_published, :title => l('PUBLISHED'), :controller => 'pages') %>
+    <%= display_articles(@articles_archived, :title => l('ARCHIVED'), :controller => 'pages') %>
+  <% else %>
+    <p><%= l('No articles') %></p>  
+  <% end -%>
+</div>
+
+<div id="sidebar">
+  <div id="categories-actions">
+    <ul class="button">
+      <li class="add-page-button"><%= link_to l('add an article'), :controller => 'pages', :action => 'new', :category_id => @categories %></li>
+      <li><%= link_if_permit "cms_admin", l('add a category'), :controller => 'categories', :action => 'new' %></li>
+    </ul>
+  </div>
+</div>

@@ -1,0 +1,35 @@
+<% @page_title = l('edit') + ": #{@category.name}" %>
+
+<h2><%= l("Editing Category '%s'", @category.name) %></h2>
+
+<% unless @category.errors.empty? -%>
+  <div id="ErrorExplanation">
+    <h2><%= l("something gone wrong") %></h2>
+    <ul>
+    <% @category.errors.each do |attr, msg| -%>
+      <li><%=h l(attr.capitalize) %> <%= l(msg) %></li>
+    <% end -%>
+    </ul>
+  </div>
+  <div class="clear"></div>
+<% end -%>
+
+
+<%= form_tag :action => :edit %>
+<div>
+  <label for="category-selection"><%= l('Parent') %></label>
+  <select name="category[parent_id]" id="category-selection">
+    <%= options_from_collection_for_select @categories, 'id', 'name', selected_value = @category.parent_id %>
+  </select>
+</div>
+<div>
+  <label for="category_name"><%= l('Name') %><em class="required">*</em></label>
+  <%= text_field :category, :name %>
+</div>
+<div>
+  <%= submit_tag l('validate'), :class => "button" %>
+  <%= link_to l('cancel'), :action => 'list' %>
+</div>
+</form>
+
+<%= button_to l('delete this category'), {:action => :delete, :id => @category}, :confirm => l("This will delete all subcategories and all articles in those categories as well. Do you want to proceed?") %>

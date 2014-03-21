@@ -1,0 +1,16 @@
+<div id="tags">
+  <strong>Tags:</strong>
+<%=
+  if tagged.tags.blank?
+    ""
+  else
+    tagged.tags.collect {|tag| tag.name}.join(", ")
+  end
+%>
+(<%= link_to_function(l('edit'), update_page{|page|
+page.toggle 'form-tag'
+})
+%>)
+</div>
+
+

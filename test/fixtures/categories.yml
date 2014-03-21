@@ -1,0 +1,109 @@
+--- 
+categories_009: 
+  permalink: aide
+  name: Aide
+  id: "9"
+  position: "5"
+  parent_id: "1"
+categories_010: 
+  permalink: a-propos
+  name: A propos
+  id: "10"
+  position: "6"
+  parent_id: "1"
+categories_011: 
+  permalink: disclaimer
+  name: Disclaimer
+  id: "11"
+  position: "7"
+  parent_id: "1"
+categories_012: 
+  permalink: contacts
+  name: Contacts
+  id: "12"
+  position: "8"
+  parent_id: "1"
+categories_001: 
+  permalink: root
+  name: Root
+  id: "1"
+  position: "1"
+  parent_id: 
+categories_013: 
+  permalink: impressum
+  name: Impressum
+  id: "13"
+  position: "9"
+  parent_id: "1"
+info_pratiques: 
+  permalink: infos-pratiques
+  name: Infos Pratiques
+  id: "2"
+  position: "1"
+  parent_id: "1"
+categories_014: 
+  permalink: cv
+  name: Cv
+  id: "14"
+  position: "10"
+  parent_id: "1"
+categories_003: 
+  permalink: en-france
+  name: Fiches France
+  id: "3"
+  position: "1"
+  parent_id: "2"
+categories_015: 
+  permalink: entreprises
+  name: Entreprises
+  id: "15"
+  position: "11"
+  parent_id: "1"
+categories_004: 
+  permalink: in-deutschland
+  name: Fiches Allemagne
+  id: "4"
+  position: "2"
+  parent_id: "2"
+categories_016: 
+  permalink: francais
+  name: "Fran\xE7ais"
+  id: "16"
+  position: "1"
+  parent_id: "15"
+categories_005: 
+  permalink: fiches-france-allemagne
+  name: Fiches France-Allemagne
+  id: "5"
+  position: "3"
+  parent_id: "2"
+categories_017: 
+  permalink: deutsch
+  name: Deutsch
+  id: "17"
+  position: "2"
+  parent_id: "15"
+categories_006: 
+  permalink: salons
+  name: Salons
+  id: "6"
+  position: "2"
+  parent_id: "1"
+categories_018: 
+  permalink: newsletter
+  name: Newsletter
+  id: "18"
+  position: "12"
+  parent_id: "1"
+categories_007: 
+  permalink: partenaires
+  name: Partenaires
+  id: "7"
+  position: "3"
+  parent_id: "1"
+categories_008: 
+  permalink: carriere
+  name: Carriere
+  id: "8"
+  position: "4"
+  parent_id: "1"

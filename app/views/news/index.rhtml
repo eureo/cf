@@ -1,0 +1,157 @@
+<h1>Le Petit Journal Allemagne</h1>
+
+<p><img style="float:right;margin-left:10px" src="/images/logo_lpj.jpg" width="285" height="59" />Seul site d'information dédié à la communauté des Français expatriés dans le monde, Lepetitjournal.com compte à ce jour 4 éditions en Allemagne : Berlin, Cologne, Hambourg et Francfort.</p>
+
+<p>Offrant un mix quotidien d'actualités générales, de nouvelles locales et culturelles, Lepetitjournal est le parfait pendant de Connexion-Française et deviendra, nous en sommes surs, votre guide pour profiter au mieux de l'Allemagne.</p>
+
+<p class='no-margin'>Nous remercions nos partenaires qui soutiennent ce partenariat :</p>
+<ul>
+  <li><a href='http://www.villafrance.de/'>Villa France, Centre d’affaires franco-allemand</a></li>
+  <li><a href='http://www.connexion-emploi.com/thomas-desray'>Thomas Desray, Conseiller financier français en Allemagne</a></li>
+</ul>
+
+<p>Dans le cadre de son développement, nous recherchons constamment des <a href='http://www.connexion-emploi.com/fr/offers#t=correspondants-locaux-hf-francfort-stuttgart-munich-hambourg-cologne-dsseldorf-bonn-et-berlin'>correspondants locaux pour Francfort, Stuttgart, Munich, Hambourg, Cologne, Dusseldorf, Bonn et Berlin</a>.</p>
+
+<div id="berlin" class='city'>
+  <h2>Edition de <a href="http://www.lepetitjournal.com/berlin.html">Berlin</a></h2>
+  <dl></dl>  
+</div>
+
+
+<div id="cologne" class='city'>
+  <h2>Edition de <a href="http://www.lepetitjournal.com/cologne.html">Cologne</a></h2>
+  <dl></dl>
+</div>
+
+<div id="francfort" class='city'>
+  <h2>Edition de <a href="http://www.lepetitjournal.com/francfort.html">Francfort</a></h2>
+  <dl></dl>
+</div>
+
+<div id="hambourg" class='city'>
+  <h2>Edition de <a href="http://www.lepetitjournal.com/hambourg.html">Hambourg</a></h2>
+  <dl></dl>
+</div>
+
+
+<% content_for(:head) do %>
+<script language="Javascript" type="text/javascript">
+
+  // BERLIN
+  $(function() {
+    var feed = new google.feeds.Feed("http://www.lepetitjournal.com/index.php?option=com_ninjarsssyndicator&feed_id=5&format=raw");
+
+    feed.setNumEntries(10);
+    feed.load(function(data){
+      var element = $("#berlin");
+      var items = data.feed.entries;
+
+      $.each(items, function(i, item){
+        
+        var dt = $("<dt></dt>");
+        var dd = $("<dd></dd>");
+        var a = $("<a></a>")
+        var date = $("<span class='date'></span>")
+        date.text(convertAtomDateString(item.publishedDate));
+
+        a.text(item.title)
+          .attr("href", item.link)
+          .attr("target", "_blank");
+
+        date.appendTo(dt);
+        a.appendTo(dd);  
+        dt.appendTo(element.find("dl"));
+        dd.appendTo(element.find("dl"));
+      });
+    });
+  });
+  
+  // COLOGNE
+  $(function() {
+    var feed = new google.feeds.Feed("http://www.lepetitjournal.com/index.php?option=com_ninjarsssyndicator&feed_id=9&format=raw");
+
+    feed.setNumEntries(10);
+    feed.load(function(data){
+      var element = $("#cologne");
+      var items = data.feed.entries;
+
+      $.each(items, function(i, item){
+
+        var dt = $("<dt></dt>");
+        var dd = $("<dd></dd>");
+        var a = $("<a></a>")
+        var date = $("<span class='date'></span>")
+        date.text(convertAtomDateString(item.publishedDate));
+
+        a.text(item.title)
+          .attr("href", item.link)
+          .attr("target", "_blank");
+
+        date.appendTo(dt);
+        a.appendTo(dd);  
+        dt.appendTo(element.find("dl"));
+        dd.appendTo(element.find("dl"));
+      });
+    });
+  });
+  
+  // FRANCFORT
+  $(function() {
+    var feed = new google.feeds.Feed("http://www.lepetitjournal.com/index.php?option=com_ninjarsssyndicator&feed_id=10&format=raw");
+
+    feed.setNumEntries(10);
+    feed.load(function(data){
+      var element = $("#francfort");
+      var items = data.feed.entries;
+
+      $.each(items, function(i, item){
+
+        var dt = $("<dt></dt>");
+        var dd = $("<dd></dd>");
+        var a = $("<a></a>")
+        var date = $("<span class='date'></span>")
+        date.text(convertAtomDateString(item.publishedDate));
+
+        a.text(item.title)
+          .attr("href", item.link)
+          .attr("target", "_blank");
+
+        date.appendTo(dt);
+        a.appendTo(dd);  
+        dt.appendTo(element.find("dl"));
+        dd.appendTo(element.find("dl"));
+      });
+    });
+  });
+  
+  // HAMBOUG
+  $(function() {
+    var feed = new google.feeds.Feed("http://www.lepetitjournal.com/index.php?option=com_ninjarsssyndicator&feed_id=11&format=raw");
+
+    feed.setNumEntries(10);
+    feed.load(function(data){
+      var element = $("#hambourg");
+      var items = data.feed.entries;
+
+      $.each(items, function(i, item){
+
+        var dt = $("<dt></dt>");
+        var dd = $("<dd></dd>");
+        var a = $("<a></a>")
+        var date = $("<span class='date'></span>")
+        date.text(convertAtomDateString(item.publishedDate));
+
+        a.text(item.title)
+          .attr("href", item.link)
+          .attr("target", "_blank");
+
+        date.appendTo(dt);
+        a.appendTo(dd);  
+        dt.appendTo(element.find("dl"));
+        dd.appendTo(element.find("dl"));
+      });
+    });
+  });
+  
+</script>  
+<% end %>

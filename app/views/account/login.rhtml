@@ -1,0 +1,31 @@
+<% @page_title = l('Login') -%>
+
+<%= form_tag %>
+<% if flash[:notice] -%>  
+<div id="notice">
+  <em><%= l(flash[:notice]) %></em>
+</div>
+<% end -%>
+
+<div>
+  <label for="login"><%= l('Login') %></label>
+  <%= text_field_tag 'login' %>
+</div>
+
+<div>
+  <label for="password"><%= l('Password') %></label>
+  <%= password_field_tag 'password' %>
+</div>
+
+<div>
+  <label></label>
+  <%= link_to l('forgot your password ?'), :action => "forgot_password" %>
+</div>
+
+<div>
+  <%= check_box_tag 'rememberme', 1, true, :class => "checkbox" %>
+  <%= l("remember me?").capitalize %>
+</div>
+
+<div><%= submit_tag l('Log in'), :class => "button" %></div>
+</form>

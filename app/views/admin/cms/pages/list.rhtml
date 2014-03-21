@@ -1,0 +1,26 @@
+<% @page_title = l('Articles') %>
+
+<div id="articles">
+<% if @articles.nil? -%>
+  <%= l('no articles') %>
+<% else  -%>
+
+  <% if @tag_name.nil? -%>
+    <h1><%= l("All articles") %></h1>
+  <% else -%> 
+    <h1>Tag: <%= @tag_name %></h1>
+  <% end -%>
+  
+  <ul>
+  <% @articles.each do |article| -%>
+  <li>
+    <%= link_to article.title, :controller => "/admin/cms/pages", :action => :show, :id => article %>
+    <% unless article.created_at.blank? -%>
+    &nbsp;&mdash;&nbsp;
+    <%= "#{article.created_at.to_formatted_s(:eu_format)}" %>
+    <% end -%>
+  </li>
+  <% end -%>
+  </ul>
+<% end -%>
+</div>

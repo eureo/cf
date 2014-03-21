@@ -1,0 +1,24 @@
+<% @page_title = l('Search') %>
+
+<%= form_tag :action => :result %>
+<label><%= l('search').capitalize %></label>
+<%= text_field_tag "query" %>
+<%= submit_tag l('GO'), :class => "button" %>
+</form>
+
+<div id="results">
+  <% if @articles.nil? or @articles.size == 0 -%>
+    <p>No results</p>
+  <% else -%>
+  <dl>
+  <% @articles.each do |article| -%>
+  <dt><%= link_to article.title, :controller => '/admin/cms/pages', :action => :show, :id => article  %> 
+  <%= l('in') %> <%= link_to article.category.name, :controller => '/admin/cms/categories', :action => :show, :id => article.category %>
+  <%= ' - ' + l('published') if article.published %>
+  <%= ' - ' + l('archived') if article.archived %>
+  </dt>
+  <dd><%= article.excerpt %> </dd>
+  <% end -%>
+  </dl>
+  <% end -%>
+</div>

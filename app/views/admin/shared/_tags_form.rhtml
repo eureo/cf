@@ -1,0 +1,37 @@
+<%= form_remote_tag :url => { :action => "tag", :id => tagged.id },
+  :loading => update_page{|page| 
+    page.hide 'submit-tag'                               
+    page.show 'arrow-indicator'
+  },
+  :complete => update_page{|page| 
+    page.toggle 'form-tag'
+    page.hide 'arrow-indicator'                              
+    page.show 'submit-tag'
+    page.hide 'tags-list'
+  },
+  :success => update_page{|page| page.visual_effect :highlight, 'tags' },
+  :update => "tags",
+  :html => { :id => "form-tag", :style => "display:none" } %>
+  <label><em><%= l("separate with space") %></em></label>
+  <%= text_field_tag "tag_list", tagged.tags.collect{|tag| tag.name }.join(" "), :size => 40 %>
+  <%= submit_tag l('Ok'), :id => 'submit-tag' %>
+  <%= arrow_indicator %>  
+  <br/>
+  <%= link_to_remote l('tags list'), 
+  :url => { :action => "show_tags_list" },
+  :loading => update_page{|page|
+    page.hide 'submit-tag'                               
+    page.show 'arrow-indicator'
+  },
+  :complete => update_page{|page|  
+    page.toggle 'tags-list'
+    page.hide 'arrow-indicator'                              
+    page.show 'submit-tag'                               
+  }
+  %>
+  <%= render :partial => "/admin/shared/tags_list" %>
+
+
+  
+  
+<%= end_form_tag %>

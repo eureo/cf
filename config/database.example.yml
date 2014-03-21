@@ -1,0 +1,20 @@
+development:
+  adapter: mysql
+  database: ce_dev
+  username: root
+  password: 
+  host: localhost
+
+test:
+  adapter: mysql
+  database: ce_test
+  username: root
+  password:
+  host: localhost
+
+production:
+  adapter: mysql
+  database: ce
+  username: merrycre
+  password: thibamay
+  host: mysql.merrycreation.com

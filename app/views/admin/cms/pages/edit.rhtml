@@ -1,0 +1,109 @@
+<% @page_title = l("edit") + ": #{@article.title.downcase}" %>
+
+<div id="main">
+  
+  <%= category_path(@article.category) %>
+  
+  <h2><%= l("Editing article '%s'", @article.title) %></h2>
+
+  <% unless @article.errors.empty? -%>
+    <div id="ErrorExplanation">
+      <h2><%= l("something gone wrong") %></h2>
+      <ul>
+      <% @article.errors.each do |attr, msg| -%>
+        <li><%=h l(attr.capitalize) %> <%= l(msg) %></li>
+      <% end -%>
+      </ul>
+    </div>
+    <div class="clear"></div>
+  <% end -%>
+
+  <%= form_tag :action => :edit %>
+  <div>
+    <label for="category-selection"><%= l('Category') %></label>
+    <select name="article[category_id]" id="category-selection">
+      <%= options_from_collection_for_select category_struct, 'id', 'name', selected_value = @current_category %>
+    </select>
+  </div>
+  <div>
+    <label for="article_title"><%= l('Title') %><em class="required">*</em></label>
+    <%= text_field :article, :title %>
+  </div>
+  <div>
+    <label for="article_author"><%= l('Author') %></label>
+    <%= text_field :article, :author %>
+  </div>
+  
+
+  <div id="excerpt">
+    <label for="article_excerpt"><%= l('Excerpt') %></label>
+    <%= text_area :article, :excerpt, :cols => 60, :rows => 8 %>
+  </div>
+  <div>
+    <label for="article_body"><%= l('Body') %></label>
+    <%= text_area :article, :body, :cols => 60, :rows => 20 %>
+  </div>
+
+  <div>
+    <%= submit_tag l('validate'), :class => "button" %>
+    <%= link_to l('cancel'), :action => 'show', :id => @article %>
+  </div>
+  </form>
+  
+  
+</div>
+
+<div id="sidebar">
+  
+  <div id="article-images">
+    <h2><%= l('Images').upcase %></h2>
+    <ul>
+      <% @images.each do |image| -%>
+      <% @image = image %>
+      <li>
+      <a href="<%= url_for_file_column("image", "name") %>"><%= image_tag url_for_file_column("image", "name", "thumb") %></a>
+      <%= link_to image_tag('../images/trash.gif'), { :action => :delete_image, :id => image}, :class => "trash" %>
+      </li>
+      <% end -%>
+    </ul>
+    <%= form_tag({:action => :upload_image, :id => @article }, :multipart => true) %>   
+    <h3><%= l('Add an image') %></h3>
+    <div class="upload">
+      <%= file_column_field "img", "name", :size => "10" %>
+      <%= submit_tag l('upload'), :class => "button" %>
+    </div>
+    </form>
+
+  </div>
+  
+  <div id="article-attachments">
+    <h2><%= l('Files').upcase %></h2>
+    <ul>
+      <% @attachments.each do |attachment| -%>
+      <% @attachment = attachment %>
+      <li>
+      <a href="<%= url_for_file_column("attachment", "file") %>"><%= attachment['file'] %></a>
+      <%= link_to image_tag('../images/trash.gif'), { :action => :delete_attachment, :id => attachment}, :class => "trash" %>
+      </li>
+      <% end -%>
+    </ul>
+    <%= form_tag({:action => :upload_attachment, :id => @article }, :multipart => true) %>  
+    <h3><%= l('Attach a file') %></h3>
+    <div class="upload">
+      <%= file_column_field "attachment", "file", :size => "10" %>
+      <%= submit_tag l('upload'), :class => "button" %>
+    </div>
+    </form>
+  </div>
+
+  <div id="syntax-guide-toogle">
+    <%= l("Open the %s to know how to make headers, lists, and more.",
+    (
+        link_to_remote l("syntax guide"), :url => { :action => "show_syntax_guide" },
+        :loading => "Element.show('load-indicator');Element.hide('syntax-guide-toogle');",
+        :complete => "Element.hide('load-indicator');")
+       ) %>
+  </div>
+
+  <div class="clear"></div>
+</div>

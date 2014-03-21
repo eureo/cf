@@ -1,0 +1,27 @@
+<div  id="regions_menu">
+  <h2><%= link_to "Länder", url_for(:controller => "regions") %></h2>
+  <ul>  
+  <% for region in @regions %>
+    <li>
+      <% if highlight_region(region) %>
+      <%= link_to region.name, region_path(region), :class => "current" %>
+    	<% if @current_region.children.size > 0 %>
+        <ul class="level2">
+          <% for category in region.children %>
+            <% unless category.published_articles.size == 0 -%>
+        			<% if highlight_regional_subcategory(category) %>
+        				<li><%= link_to category.name + " (#{category.published_articles.size})", region_url(category), :class => "current" %></li>
+        			<% else %>
+        				<li><%= link_to category.name + " (#{category.published_articles.size})", region_url(category) %></li>
+        			<% end -%>
+        		<% end -%>
+          <% end %>
+        </ul>
+      <% end %>
+      <% else %>
+        <%= link_to region.name, region_path(region) %>
+      <% end %>
+    </li>
+  <% end %>
+  </ul>
+</div>

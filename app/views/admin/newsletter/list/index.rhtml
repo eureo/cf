@@ -1,0 +1,38 @@
+<div id="main">
+	
+	<% unless @lists.nil? or @lists.size == 0 %>
+	<h1><%= l('Mailing Lists') %></h1>
+	
+	<table cellspacing="0" cellpadding="0">
+	  <thead>
+	    <tr>
+	      <th><%= l('LISTS') %></th>
+	      <th><%= l('MEMBERS') %></th>
+	      <th><%= l('ACTIONS') %></th>
+	    </tr>
+	  </thead>
+	  <tbody>
+	    <% @lists.each do |list| -%>
+	    <tr <%= cycle(""," class='odd'") %>>
+	        <td><%= link_to list.name, :action => 'show', :id => list %></td>
+	        <td><%= list.ml_members.size %></td>
+	        <td>
+						<%= link_to l("edit"), :action => "edit", :id => list %> | 
+						<%= link_to l("add members"), :action => "add_members", :list_id => list %>
+						<%= button_to l('delete'), { :action => 'delete', :id => list }, :confirm => l("Are You Sure ?") %>
+					</td>
+	     </tr>
+	    <% end -%>
+	  </tbody>
+	</table>
+	
+	<% else %>
+	<p>No Mailing Lists. Start to add some ...</p>
+	<% end %>
+</div>	
+	
+<div id="sidebar">
+	<ul class="button">
+		<li class="add-button"><%= link_to l("add list"), :action => "new" %></li>
+	</ul>
+</div>

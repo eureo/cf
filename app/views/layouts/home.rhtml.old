@@ -1,0 +1,89 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml-1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="FR" lang="FR">
+<head>
+  <title><%= @page_title || 'Homepage' %></title>
+
+  <%= stylesheet_link_tag "text", "standard", "layout", "cf", :media => 'all' %>
+  <%= javascript_include_tag "generals", "cb", "pubroll", "map-germany" %>
+  <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+</head>
+<body>
+
+<div id="wrapper">
+	<%= render :partial => "pubs/banner" %>
+	<%= render :partial => "shared/header_links" %>
+	
+	<div id="header">
+		<h1><%= link_to "Connexion Emploi", home_url %></h1>
+		<h2>Le site des français et francophones en Allemagne</h2>
+	</div>
+	<div id="content">
+		<div id="mainContent"><div id="c">		
+			
+			<%= render :partial => "/shared/flash_box" %>
+						
+			<%= yield %>
+		</div></div>
+		<div id="secondaryContent">
+			<% unless @current_region.nil? -%>
+				<div id="topSecondaryContent">
+					<%= render :partial => '/shared/cineclic' %>
+					<div id="topSecondaryContentButtons"><div id="c">
+						<%= render :partial => '/shared/forum' %>
+						<%= render :partial => '/shared/carte_des_membres' %>
+						<%= render :partial => '/shared/agenda' %>
+						<%= render :partial => '/shared/boutique' %>
+						<%= render :partial => '/shared/newsletter_button' %>
+					</div></div>
+				</div>
+				<%= render :partial => '/shared/regional_subcategories' %>
+				<%= render :partial => '/shared/rencontre320' %>
+				<%= 
+				  render :partial => '/shared/regional_jobs' 
+				%>
+				<%= 
+					#render :partial => '/shared/search_box' 
+				%>
+				
+				<%= render :partial => '/shared/newsletter_signin' %>
+				<%= render :partial => '/shared/other_articles' %>
+			<% else -%>
+				<div id="topSecondaryContent">
+					<%= render :partial => '/shared/cineclic' %>
+					<div id="topSecondaryContentButtons"><div id="c">
+						<%= render :partial => '/shared/forum' %>
+						<%= render :partial => '/shared/carte_des_membres' %>
+						<%= render :partial => '/shared/agenda' %>
+						<%= render :partial => '/shared/boutique' %>
+						<%= render :partial => '/shared/newsletter_button' %>
+					</div></div>
+				</div>
+				<%= render :partial => '/shared/rencontre320' %>
+				<%= 
+				  render :partial => '/shared/jobs' 
+				%>
+				<%= 
+					# render :partial => '/shared/search_box' 
+				%>				
+				<%= render :partial => '/shared/newsletter_signin' %>
+				<%= render :partial => '/shared/other_articles' %>
+			<% end -%>
+		</div>
+	</div>
+	<div id="nav">
+		<%= render :partial => '/shared/vivre_en_allemagne' %>
+		<%= render :partial => '/shared/regions' %>
+	</div>
+	<div class="clear"></div>
+	<div id="footer">
+		<ul>
+			<li class="first"><a href="/articles/impressum">Impressum</a></li>
+			<li><a href="/articles/disclaimer">Disclaimer</a></li>
+			<li><a href="/articles/a-propos">A propos</a></li>
+			<li class="last"><a href="/articles/contact">Contact</a></li>
+		</ul>
+	</div>
+</div>
+
+</body>
+</html>

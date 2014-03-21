@@ -1,0 +1,709 @@
+/* CF
+
+COLORS
+light blue : 00A0C5
+dark blue : 3C77B9
+orange : F49D11
+red : BF0000
+yellow : FCBE26
+
+------------------------------------------------*/
+
+.hiddenImage {
+	display:none;
+}
+
+#plan_search_box {
+	margin: 1em 0;
+}
+
+/* =flash
+------------------------------------------------*/
+.flash {
+  color:red;
+  font-weight:bold;
+  padding:1em;
+  border: 2px solid #FF0000;
+}
+
+/* =table
+------------------------------------------------*/
+table { 
+	margin: 1em 0;
+	width:100%;
+}
+table tr th { 
+	background: #BF0000;
+	color: #FFF;
+	padding: 0.2em 0.5em;
+}
+
+table tr td { 
+	padding: 0.2em 0.5em;
+	
+}
+
+table tr.odd td {
+	background: #FFE9E8;
+}
+
+
+/* =mainContent
+------------------------------------------------*/
+#mainContent h1,
+#mainContent h2,
+#mainContent h3 {
+	color: #3C77B9;
+	font-family: helvetica;
+}
+
+#mainContent h1 {
+	margin:0;
+	margin-top:0.5em;
+	margin-bottom:0.5em;
+	padding:0;
+	font-size:1.8em;
+	font-weight:bold;
+	line-height:1.2em;
+}
+
+#mainContent h2 {
+	margin:0;
+	margin-top:1.5em;
+	margin-bottom:0.5em;
+	padding:0;
+	font-size:1.3em;
+	font-weight:bold;
+	line-height:1.2em;
+}
+
+
+#mainContent h1 a:link,
+#mainContent h1 a:visited,
+#mainContent h1 a:hover,
+#mainContent h2 a:link,
+#mainContent h2 a:visited,
+#mainContent h2 a:hover {
+	text-decoration:none;
+}
+#mainContent h1 a:hover,
+#mainContent h2 a:hover {
+	text-decoration:underline;
+	color: #BF0000;
+}
+
+#mainContent a:visited {
+	%color: #F49D11;
+}
+
+#mainContent a:hover {
+	text-decoration: none;
+	color: #BF0000;
+}
+
+#mainContent .info_article {
+	font-family: georgia, times, serif;
+	font-size: 1em;
+	border-top: 1px dashed #3C77B9;
+	border-bottom: 1px dashed #3C77B9;
+	background: #EEE;
+	padding: 3px 0;
+}
+#mainContent .info_article .date {
+}
+#mainContent .info_article .author {
+	font-family: helvetica;
+	color: #BF0000;
+	font-size: 0.95em;
+}
+
+#mainContent li {
+	line-height: 150%;
+}
+
+/* =contact
+------------------------------------------------*/
+#contact {}
+#contact input {
+	width: 90%;
+	line-height: 150%;
+	padding: 2px 0;
+	border: solid 1px #222;
+}
+#contact textarea {
+	width: 90%;
+	border: solid 1px #222;
+}
+#contact input.button {
+	width: auto;
+	padding: 3px 5px;
+	border: solid 1px #222;
+}
+
+/* =jobs
+------------------------------------------------*/
+#jobs {}
+#jobs .region {
+	font-weight: bold;
+	color: #222;
+}
+#jobs h3 {
+	margin:0;
+	margin-bottom:0.5em;
+	font-size:0.9em;
+	font-weight:normal;
+}
+#jobs ul {
+	list-style:none;
+}
+#jobs li {
+	margin:0;
+	margin-bottom:0.5em;
+}
+
+#jobs a:link,
+#jobs a:active,
+#jobs a:visited,
+#jobs a:hover {
+	font-size: 0.9em;
+	text-decoration: none;
+}
+#jobs a:visited {
+	color: #F49D11;
+}
+#jobs a:hover {
+	text-decoration: underline;
+	color: #BF0000;
+}
+
+/* =regional_subcategories
+------------------------------------------------*/
+#regional_subcategories {}
+#regional_subcategories ul {
+	margin:0; padding:0;
+	list-style:none;
+}
+#regional_subcategories ul li {
+	margin:0;
+	margin-left:0.2em;
+	font-size:0.95em;
+	line-height: 175%;
+}
+
+#regional_subcategories ul li a:link,
+#regional_subcategories ul li a:visited,
+#regional_subcategories ul li a:active,
+#regional_subcategories ul li a:hover {
+	text-decoration: none;
+}
+
+#regional_subcategories ul li a:hover {
+	text-decoration: underline;
+	color: #BF0000;
+}
+
+
+/* =nav
+------------------------------------------------*/
+#nav ul {
+	list-style-type:none;
+	margin:0;
+	margin-top: -5px;
+	margin-left:-5px;
+	padding:0;
+}
+
+#nav li {
+	margin:0;
+	padding:0;
+	width:155px;
+}
+
+#nav li a:link,
+#nav li a:active,
+#nav li a:visited,
+#nav li a:hover {
+	font-size:0.95em;
+	line-height:200%;
+	text-decoration:none;
+	display:block;
+	border-top: 1px solid #DDD;
+	background: #FFF;
+	%padding-left:5px;
+	color: #3C77B9;
+}
+
+#nav li.top a:link,
+#nav li.top a:active,
+#nav li.top a:visited {
+	border-top: none;
+}
+
+#nav li a:visited {	
+	%color: #F49D11;
+}
+
+
+#nav li a:hover {	
+	color: #BF0000;
+	text-decoration:underline;
+}
+
+li a.current {
+	font-weight: bold;
+}
+
+/* =regions
+------------------------------------------------*/
+#regions h2 {
+	text-align: left;
+}
+#regions #carte {
+	text-align: center;
+}
+#regions p#lander {
+	margin-left:-6px;
+	font-size:0.90em;
+	color: #BF0000;
+	font-weight: bold;
+	display:block;
+	height:3em;
+}
+
+#regions-menu {
+	clear:both;
+	float:left;
+	margin-top: 20px;
+	margin-bottom: 10px;
+}
+#regions select {
+	width:115px;
+	float: left;
+}
+#regions input {
+	float:left;
+	margin-left:5px;
+	padding:0;
+	color: #FFF;
+	background-color: #BF0000;
+}
+
+/* =newsletter
+------------------------------------------------*/
+#newsletter {}
+
+
+
+#newsletter fieldset {
+	width:80%;
+}
+p#desinscription {
+	color: #666;
+	font-size:0.95em;
+	margin:0;
+}
+#newsletter #desinscription a:link,
+#newsletter #desinscription a:visited,
+#newsletter #desinscription a:hover {
+}
+#newsletter #desinscription a:hover {
+	text-decoration:none;
+	color: #BF0000;
+}
+
+/* =search_box
+------------------------------------------------*/
+#search_box {}
+#search_box input {
+	width: 180px;
+	line-height: 150%;
+}
+#search_box input.search-button {
+	width:auto;
+	line-height:150%;
+	height:21px;
+}
+
+#search_result {
+	width:450px;
+}
+
+/* =other_articles
+------------------------------------------------*/
+#other_articles {}
+#other_articles ul {
+	margin:0;
+	padding:0;
+	list-style: none;
+}
+#other_articles ul li {
+	margin:0;
+	padding:0;
+	margin-bottom: 1.5em;
+}
+#other_articles a:link,
+#other_articles a:visited,
+#other_articles a:hover {
+}
+#other_articles a:visited {
+	color: #F49D11;
+}
+#other_articles a:hover {
+	text-decoration:none;
+	color: #BF0000;
+}
+
+/* =pubroll
+------------------------------------------------*/
+#pubroll {
+	margin: 1em 0;
+}
+
+
+/* .orange for TCCB
+================================================*/
+/* Basic styling, used when JavaScript is unsupported */
+
+.cbb {
+	margin: 0.5em 0;
+	border: solid 1px #BF0000;
+}
+
+.cbb h2 {
+	margin:0;
+	padding: 0.1em 0.4em;
+	font-size: 1em;
+	color: #FFF;
+	background-color: #BF0000;
+}
+
+.cbb p {
+	margin:0.5em;
+}
+.cbb p#desinscription {
+	margin:0.5em;
+}
+
+.cbb input, .cbb select {
+	margin: 0.5em;
+}
+
+.cbb li {font-size:0.95em;}
+
+.cbb a {
+	font-size: 1em;
+	text-decoration: none;
+}
+
+#nav .cbb ul {
+	list-style-type:none;
+	margin:0 5px;
+	padding:0;
+}
+
+#nav .cbb li {
+	margin:0;
+	padding:0;
+	width:155px;
+}
+
+
+
+/* Normal styling */
+
+.cb {
+	margin:0;
+	margin-top: 0.7em;
+	margin-bottom: 0.7em;
+}
+.cb h2 {
+	position:relative;
+	margin: 12px -5px;
+	margin-top: -24px;
+	padding:0.3em 10px;
+	font-size: 1em;
+	color: #FFF;
+
+}
+/*
+.cb li {
+	font-size:0.95em;
+	margin:0 0.8em;
+	padding:0;
+}
+.cb a:link,
+.cb a:visited,
+.cb a:hover {
+	font-size:1em;
+	text-decoration: none;
+	color: #3C77B9;
+}
+.cb a:hover {
+	text-decoration: underline;
+}
+*/
+/* Top corners and border */
+.orange { 
+	float:left; 
+	width:320px;
+}
+.orange .bt {
+	height:22px;
+	margin:0 0 0 20px;
+	background:url(../images/box_orange.gif) no-repeat 100% 0;
+}
+.orange .bt div {
+	position:relative;
+	left:-20px;
+	width:20px;
+	height:22px;
+	background:url(../images/box_orange.gif) no-repeat 0 0;
+	font-size:0;
+	line-height:0;
+}
+
+	/* Bottom corners and border */
+.orange .bb {
+	height:20px;
+	margin:0 0 0 20px;
+	background:url(../images/box_orange.gif) no-repeat 100% 100%;
+}
+.orange .bb div {
+	position:relative;
+	left:-20px;
+	width:22px;
+	height:20px;
+	background:url(../images/box_orange.gif) no-repeat 0 100%;
+	font-size:0;
+	line-height:0;
+}
+
+	/* Left border */
+.orange .i1 {
+	padding:0 0 0 5px;
+	background:url(../images/borders_orange.gif) repeat-y 0 0;
+}
+	/* Right border */
+.orange .i2 {
+	padding:0 5px 0 0;
+	background:url(../images/borders_orange.gif) repeat-y 100% 0;
+}
+	/* Wrapper for the content. Use it to set the background colour and insert some padding between the borders and the content. */
+.orange .i3 {
+	display:block;
+	margin:0;
+	padding:1px 10px;
+	background:#fff;
+}
+	/* Make the content wrapper auto clearing so it will contain floats (see http://positioniseverything.net/easyclearing.html). */
+.orange .i3:after {
+	content:"."; 
+	display:block; 
+	height:0; 
+	clear:both; 
+	visibility:hidden;
+}
+.orange .i3 {display:inline-block;}
+.orange .i3 {display:block;}
+/* .orange for TCCB CSS ends here */
+
+/* .red for TCCB
+================================================*/
+/* Top corners and border */
+
+.red { 
+	float:left; 
+	width:180px;
+}
+
+.red .bt {
+	height:22px;
+	margin:0 0 0 20px;
+	background:url(../images/box_red.gif) no-repeat 100% 0;
+	z-index:1;
+}
+.red .bt div {
+	position:relative;
+	left:-20px;
+	width:20px;
+	height:22px;
+	background:url(../images/box_red.gif) no-repeat 0 0;
+	font-size:0;
+	line-height:0;
+	z-index:1;
+}
+
+	/* Bottom corners and border */
+.red .bb {
+	height:10px;
+	margin:0 0 0 20px;
+	background:url(../images/box_red.gif) no-repeat 100% 100%;
+}
+.red .bb div {
+	position:relative;
+	left:-20px;
+	width:22px;
+	height:10px;
+	background:url(../images/box_red.gif) no-repeat 0 100%;
+	font-size:0;
+	line-height:0;
+}
+
+	/* Left border */
+.red .i1 {
+	padding:0 0 0 5px;
+	background:url(../images/borders_red.gif) repeat-y 0 0;
+}
+	/* Right border */
+.red .i2 {
+	padding:0 5px 0 0;
+	background:url(../images/borders_red.gif) repeat-y 100% 0;
+}
+	/* Wrapper for the content. Use it to set the background colour and insert some padding between the borders and the content. */
+.red .i3 {
+	display:block;
+	margin:0;
+	padding:1px 10px;
+	background:#fff;
+}
+	/* Make the content wrapper auto clearing so it will contain floats (see http://positioniseverything.net/easyclearing.html). */
+.red .i3:after {
+	content:"."; 
+	display:block; 
+	height:0; 
+	clear:both; 
+	visibility:hidden;
+}
+.red .i3 {display:inline-block;}
+.red .i3 {display:block;}
+/* .red for TCCB CSS ends here */
+
+
+
+/* TCCB button
+------------------------------------------------*/
+.button {
+	float:left;
+	width: 150px;
+	border:none;
+	margin: 0.5em 0;
+}
+
+.button-bottom {
+	/* margin-top: -0.5em; */
+}
+
+
+.button .bt {
+	font-size:0;
+	height:10px;
+	margin:0 0 0 9px;
+	background:url(../images/button.png) transparent scroll no-repeat 100% 0;
+}
+.button .bt div {
+	position:relative;
+	left:-9px;
+	width:9px;
+	height:10px;
+	background:url(../images/button.png) transparent scroll no-repeat 0 0;
+}
+.button .bb {
+	height:10px;
+	font-size:0;
+	margin:0 0 0 8px;
+	background:url(../images/button.png) transparent scroll no-repeat 100% 100%;
+}
+.button .bb div {
+	position:relative;
+	left:-8px;
+	width:8px;
+	height:10px;
+	background:url(../images/button.png) transparent scroll no-repeat 0 100%;
+}
+.button .i1 {
+	margin: 0;
+	padding: 0 0 0 2px;
+	background: transparent scroll url(../images/button-borders.png) repeat-y 0 0;
+}
+.button .i2 {
+	padding: 0 2px 0 0;
+	background: transparent scroll url(../images/button-borders.png) repeat-y 100% 0;
+}
+.button .i3 {
+	display:block;
+	margin:0;
+	margin-right: 1px;
+	padding:0 0.8em;
+	background: url(../images/button.png) no-repeat -3px -8px;
+	text-align:center;
+}
+
+.button .i3:after {
+	content:"."; 
+	display:block; 
+	height:0; 
+	clear:both; 
+	visibility:hidden;
+}
+.button .i3 {display:inline-block;}
+.button .i3 {display:block;}
+
+.button a:link,
+.button a:visited,
+.button a:hover {
+	display:block;
+	font-size:0.90em;
+	text-decoration: none;
+	font-weight: bold;
+	border:none;
+	color:#fff;
+}
+.button a:hover {
+	text-decoration: underline;
+}
+
+.cbb a.graceful-button:link,
+.cbb a.graceful-button:visited,
+.cbb a.graceful-button:hover {
+	font-size:1em;
+	font-weight: bold;
+	border:none;
+	color:#BF0000;
+}
+.cbb a.graceful-button:hover {
+	border-bottom:1px solid #BF0000;
+}
+
+
+.button input {
+	font-size:1em;
+	font-weight: bold;
+	border:none;
+	color:#fff;
+	background:#3a3d40 url(../images/box_bouton_orange.gif) no-repeat -0.5em -0.4em;
+}
+
+/* IE 7 does not need these */
+* html .button .i1,
+* html .button .i2 {background:transparent;}
+* html .button .bt,
+* html .button .bt div {background-image:url(../images/button.gif);}
+* html .button .bb,
+* html .button .bb div {background-image:url(../images/button.gif);}
+
+/* cineclic-cine 
+------------------------------------------------*/
+.cineclic-cine { float:left; }
+.cineclic-cine select { font-size:11px; }
+.cineclic-cine p { line-height:normal; }
+
+#topSecondaryContent { float:left; margin:5px 0 5px 5px; }
+#topSecondaryContentButtons { float:left; width: 150px; }
+#topSecondaryContentButtons #c { margin-left: 5px; }
+
+.joblink { text-align:right; }
+p.joblink { margin-bottom:0; margin-top:0; }
+#jobs .joblink a:link,
+#jobs .joblink a:active,
+#jobs .joblink a:hover,
+#jobs .joblink a:visited{ color: #BF0000; font-size:1em; }

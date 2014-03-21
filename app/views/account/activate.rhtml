@@ -1,0 +1,24 @@
+<% @page_title = l('Activation') %>
+
+<%= form_tag :action => "activate" %>
+
+<% if flash[:notice] -%>  
+<div id="notice">
+  <em><%= l(flash[:notice]) %></em>
+</div>
+<% end -%>
+
+<% if flash[:error] -%>  
+<div id="notice">
+  <em><%= l(flash[:error]) %></em>
+</div>
+<% end -%>
+
+
+<div>
+  <label for="activation_code"><%= l('Activation Code') %></label>
+  <%= text_field_tag(:id, params[:id], :size=>50 ) %>
+</div>
+
+<div><%= submit_tag l('Activate'), :class => "button" %></div>
+</form>

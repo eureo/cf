@@ -1,0 +1,23 @@
+<div id="main">
+	
+	<% unless @mailing.nil? %>
+
+	  <h1><%= @mailing.subject %></h1>
+
+	  <p><strong>From : </strong><%= @mailing.from %></p>
+	  <p><strong>To : </strong><%= @mailing.to %></p>
+
+	  <h2>Body</h2>
+	  <p>
+	    <%= @mailing.body %>
+	  </p>
+
+	  <p>
+	    <%= button_to l("Send"), { :action => "send_mailing", :id => @mailing.id }, :confirm => "Are you sure ?" %> 
+	  </p>
+
+	<% end %>
+
+	<p><%= link_to l("Back"), :action => "index" %></p>
+	
+</div>

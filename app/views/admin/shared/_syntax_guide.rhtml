@@ -1,0 +1,83 @@
+<div id="syntax_guide"><div id="s">
+  <h2><%= l('Syntax Guide') %></h2>
+  <table cellspacing="0" cellpadding="0">
+  <colgroup>
+    <col width="100" />
+    <col />
+  </colgroup>
+  <thead>
+    <tr>
+      <th><%= l("do that ...") %></th>
+      <th><%= l("to get that ...") %></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>*bold phrase*</td>
+      <td><strong>bold phrase</strong></td>
+    </tr>
+    <tr>
+      <td>_italic phrase_</td>
+      <td><em>italic phrase</em></td>
+    </tr>
+    <tr>
+      <td>
+        * Bulleted list<br />
+        * Bulleted list
+      </td>
+      <td>
+        <ul>
+          <li>Bulleted lits</li>
+          <li>Bulleted lits</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        # Numbered list<br />
+        # Numbered list
+      </td>
+      <td>
+        <ol>
+          <li>Numbered list</li>
+          <li>Numbered list</li>
+        </ol>
+      </td>
+    </tr>
+    <tr>
+      <td>h1. Big Header</td>
+      <td><h1>Big Header</h1></td>
+    </tr>
+    <tr>
+      <td>h2. Normal Header</td>
+      <td><h2>Normal Header</h2></td>
+    </tr>
+    <tr>
+      <td>I use "Google":http://www.google.com</td>
+      <td>I use <a href="http://www.google.com">Google</a></td>
+    </tr>
+    <tr>
+      <td>"o.jacquemond@ce.com":mailto:o.jacquemond@ce.com</td>
+      <td><a href="mailto:o.jacquemond@ce.com">o.jacquemond@ce.com</a></td>
+    </tr>
+    <tr>
+      <td>!http://image/url/!</td>
+      <td><img src="/images/fr.png" /></td>
+    </tr>
+    <tr>
+      <td>!{float:right;}http://image/url/!</td>
+      <td><img src="/images/fr.png" style="float:right;" /></td>
+    </tr>
+  </tbody>
+  <tfoot>
+    <tr>
+      <td colspan="2"><a href="http://hobix.com/textile/"><%= l("more syntax definition") %></a></td>
+    </tr>
+  </tfoot>
+    
+</table>
+<%= link_to_remote l('close the guide'), :url => { :action => :close_syntax_guide },
+:loading => "Element.show('load-indicator');",
+:complete => "Element.hide('load-indicator');" %>
+
+</div></div>

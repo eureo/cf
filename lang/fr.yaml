@@ -1,0 +1,282 @@
+file_charset: utf-8
+
+########################################
+# ACTIVATION AND FORGOT PASSWORD
+########################################
+Please activate your new account: Activez votre compte
+Your account has been activated!: Votre compte a été activé
+Request to change your password: Réinitialisation de votre mot de passe
+Your password has been reset: Votre mot de passe a été réinitialisé
+
+Thanks for signing up! You will shorthly receive an email in order to activate your account.: Votre demande de création de compte a été enregistré. Vous allez recevoir un email afin d'activer celui-ci.
+forgot your password ?: Mot de passe oublié ?
+Invalid username or password: Identifiant ou mot de passe invalide
+Activate Code: Code d'activation
+Activate: Activer
+Your account has been activated.: Votre compte a été activé.
+Forgot Password: Mot de passe oublié
+A password reset link has been sent to your email address: Un lien permettant la réinitialisation de votre mot de passe vous a été envoyé par email.
+Password reset : Mot de passe modifié
+Activation impossible. please check your activation code: Activation impossible. Veuillez vérifier votre code d'activation
+Could not find an user with that email address: L'adresse email ne correspond à aucun utilisateur
+Password not reset: Mot de passe non modifié
+Password mismatch: La confirmation ne correspond pas au mot de passe
+Invalid Reset Code entered: Code de réinitialisation invalide
+Sorry - That is an invalid password reset code. Please check your code and try again. (Perhaps your email client inserted a carriage return?: Désolé, le code de réinitialisation est invalide. Veuillez vérifiez votre code est réessayer (Il se peut que votre lecteur d'emails ait inseré un caractère de retour à la ligne).
+Email Address: Adresse email
+Reset Password: Réinitialiser
+
+
+########################################
+# CMS
+########################################
+# application
+HOME: ACCUEIL
+PAGES: PAGES
+USERS: USERS
+
+# login
+Login: Identifiant
+Password: Mot de passe
+Confirm Password: Confirmation
+Log in: Se connecter
+log in: se connecter
+log out: se déconnecter
+Sign up: S'inscrire
+remember me?: Se souvenir de moi ?
+Password_confirmation: Confirmation
+
+#option-box
+public site: site public
+
+#title
+home: accueil
+Home: Accueil
+show: voir
+edit: modifier
+new category: nouvelle catégorie
+
+# tabs
+
+# admin home
+Welcome to the administration side of the site: Bienvenue dans la partie administration du site
+There is no on going work: Il n'y a pas d'articles en cours de rédaction
+Your On Going Articles: VOS ARTICLES EN COURS
+ON GOING ARTICLES: LES ARTICLES EN COURS
+You don't have privileges to access this action: Vous n'avez pas les privilèges nécessaires
+
+
+# pages
+Editing article '%s': Modification de '%s'
+Category: Catégorie
+categories: catégories
+Categories: Catégories
+CATEGORIES: CATEGORIES
+Title: Titre
+created: crée
+published: publié
+archived: archivé
+Author: Auteur
+Excerpt: Résumé
+Body: Corps
+validate: valider
+cancel: annuler
+Images: Images
+delete: supprimer
+Add an image: Ajouter une image
+upload: envoyer
+Files: Fichiers
+Attach a file: Attacher un fichier
+on going: en cours
+On Going: En Cours
+add an article: ajouter un article
+add a category: ajouter une catégorie
+Creating a new article: Création d'un nouvel article
+edit: modifier
+publish: publier
+unpublish: dépublier
+archive: archiver
+unarchive: désarchiver
+delete: supprimer
+ARTICLES: ARTICLES
+SETTINGS: PARAMETRES
+by: par
+the: le
+Your article was created.: Votre article a été créé
+Article was successfully updated.: Article mis à jour
+Image was successfully uploaded.: Image envoyée avec succès
+Image was successfully deleted.: Image effacée avec succès
+File was successfully uploaded.: Fichier envoyé avec succès
+File was successfully deleted.: Fichier effacée avec succès
+Article was successfully published.: Article publiée
+Article was successfully unpublished.: Article dépubliée
+Article was successfully archived.: Article archivé
+Article was successfully archived and unpublished.: Article archivé et dépublié
+Article was successfully unarchived.: Article désarchivé
+Article was successfully deleted.: Article effacé avec succès
+Are you sure?: Etes vous sûr ?
+Are You sure?: Etes vous sûr ?
+Are You Sure?: Etes vous sûr ?
+Are you sure ?: Etes vous sûr ?
+Are You sure ?: Etes vous sûr ?
+Are You Sure ?: Etes vous sûr ?
+Open the %s to know how to make headers, lists, and more.: Ouvrez le %s pour savoir comment créer des titres, des listes et autres.
+syntax guide: guide de syntaxe
+Syntax Guide: Guide de Syntaxe
+do that ...: Faites ça ...
+to get that ...: Pour obtenir ça ...
+close the guide: fermer le guide
+more syntax definition: plus de définitions de syntaxe
+# tags
+separate with space: séparés par des espaces
+no tag: aucun tag
+none: aucun
+
+# categorie
+Parent: Parent
+Name: Nom
+delete this category: supprimer cette catégorie
+This will delete all subcategories and all articles in those categories as well. Do you want to proceed?: Les sous-catégories ainsi que les articles de ces catégories seront également supprimées. Voulez vous vraiment continuer ?
+New Category: Nouvelle Catégorie
+Articles in this category: Les articles de cette catégorie
+On going: En cours
+ON GOING: EN COURS
+Published: Publiés
+PUBLISHED: PUBLIES
+Archived: Archivés
+ARCHIVED: ARCHIVES
+No articles: Aucun articles
+Start by adding some categories: Commencez par ajouter quelques catégories
+Editing Category '%s': Modification de la catégorie '%s'
+Category was successfully created.: La catégorie a été créee.
+Category was successfully updated.: La catégorie a été mise à jour.
+Category was not updated.: La catégorie n'a pu être mise à jour.
+Category was successfully deleted.: La catégorie a été supprimée.
+
+
+# search
+search: rechercher
+Search: Rechercher
+SEARCH: RECHERCHER
+in: dans
+
+# user
+User was successfully deleted: Utilisateur supprimé
+User was successfully updated: Information de l'utilisateur mise à jour
+User's role was updated: Les rôles de l'utilisateur ont été mis à jour
+User was successfully created: Utilisateur crée
+Logged in successfully: Vous êtes connecté
+You have been logged out.: Vous êtes déconnecté
+Thanks for signing up!: Inscrit!!
+Editing user '%s': Modification de l'utilisateur '%s'
+Personal information: Infos personnelles
+Login: Identifiant
+Password: Mot de passe
+Confirm: Confirmation
+users: utilisateurs
+users' list: liste des utilisateurs
+LOGIN: IDENTIFIANT
+ROLES: ROLES
+ACTIONS: ACTIONS
+Do you really want to delete user %s?: Désirez vous vraiment supprimer l'utilisateurs %s ?
+add user: ajouter un utilisateur
+creating user: création d'un utilisateur
+DATA: DONNEES
+login: identifiant
+roles: rôles
+email: email
+back: retour
+Do you really want to delete role %s?: Désirez vous vraiment supprimer le rôle %s ?
+add role: ajouter un rôle
+creating role: création d'un rôle
+Title: Titre
+
+# error
+something gone wrong: petit problème
+can't be blank: ne peut être vide
+doesn't match confirmation: n'est pas identique à la confirmation
+is too short: est trop court
+is too long: est trop long
+has already been taken: est déjà pris
+
+
+# from 28 Oct 2006
+Something gone wrong: Petit problème
+
+yes_: oui
+no_: non
+
+# Newsletter
+# from 19/02/2007
+new: nouveau
+new mailing: nouveau mailing
+CSV File of emails: Fichiers   CSV contenant des emails
+IMPORT: Importer
+import: importer
+Import: Importer
+import new csv: importer nouveau fichier
+No csv files. Start to import one: Pas de fichier CSV. Commencez par en importer un.
+
+add members: ajouter membres
+edit list: modifier la liste
+delete list: supprimer la liste
+add list: ajouter une liste
+LISTS: LISTES
+List: Liste
+list: liste
+Lists: Listes
+lists: listes
+Add: Ajouter
+Import Emails from CSV File: Importer des emails depuis un fichier CSV
+Create: Créer
+Name: Nom
+Mailing Lists: Mailing Listes
+MEMBERS: ABONNES
+Members: Abonnés
+CSV FILES: FICHIERS CSV
+Import CSV Files: Importer des fichiers CSV
+Total number of members: Nombre total d'abonnés
+Job Newsletter: Abonnement Emploi
+Import Emails from Job Newsletter: Importer des emails de l'abonnement emploi
+Member has beed added: L'abonné a été ajouté
+Member already in the list: Cet abonné est déjà dans la liste=======
+
+add members: ajouter membres
+edit list: modifier la liste
+delete list: supprimer la liste
+add list: ajouter une liste
+LISTS: LISTES
+List: Liste
+list: liste
+Lists: Listes
+lists: listes
+Add: Ajouter
+Import Emails from CSV File: Importer des emails depuis un fichier CSV
+Create: Créer
+Name: Nom
+Mailing Lists: Mailing Listes
+MEMBERS: MEMBRES
+Members: Membres
+CSV FILES: FICHIERS CSV
+Import CSV Files: Importer des fichiers CSV
+Total number of members: Nombre total de membres
+Job Newsletter: Abonnement Emploi
+Import Emails from Job Newsletter: Importer des emails de l'abonnement emploi
+
+send: envoyer
+Send: Envoyer
+back: retour
+Back: Retour
+RECIPIENTS: DESTINATAIRES
+From: De
+To: A
+Body: Message
+
+Update: Modifier
+update: modifier
+
+comma separated: séparés par des virgules
+
+is an invalid email: est invalide
+
+We could not find your email in the database.: Nous n'avons pas trouvé votre email dans notre base de données. Vous pouvez toutefois essayer de vous désinscrire en utilisant le formulaire.

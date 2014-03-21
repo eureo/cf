@@ -1,0 +1,19 @@
+<% @page_title = l('Home') %>
+
+<div id="admin">
+<div id="main">
+  <h1><%= l('Welcome to the administration side of the site') %></h1>
+  <ul>
+    <% restrict_to "cms" do -%>
+    <li class="add-page-button"><%= link_to l('add an article'), :controller => '/admin/cms/pages', :action => 'new' %></li>
+    <% end -%>
+  </ul>
+
+  <% restrict_to "cms" do -%>
+    <%= display_articles(@articles_not_yet_published, { :controller => 'admin/cms/pages' , :title => l('ON GOING ARTICLES')}) %>
+  <% end -%>
+</div>
+
+<div id="sidebar">
+</div>
+</div>

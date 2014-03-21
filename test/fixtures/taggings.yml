@@ -1,0 +1,71 @@
+--- 
+taggings_014: 
+  tag_id: "2"
+  id: "31"
+  taggable_type: Offer
+  taggable_id: "354"
+taggings_003: 
+  tag_id: "3"
+  id: "16"
+  taggable_type: Offer
+  taggable_id: "180"
+taggings_004: 
+  tag_id: "3"
+  id: "18"
+  taggable_type: Offer
+  taggable_id: "244"
+taggings_005: 
+  tag_id: "2"
+  id: "20"
+  taggable_type: Offer
+  taggable_id: "283"
+taggings_006: 
+  tag_id: "1"
+  id: "21"
+  taggable_type: Article
+  taggable_id: "57"
+taggings_007: 
+  tag_id: "3"
+  id: "23"
+  taggable_type: Offer
+  taggable_id: "295"
+taggings_008: 
+  tag_id: "3"
+  id: "25"
+  taggable_type: Offer
+  taggable_id: "319"
+taggings_009: 
+  tag_id: "2"
+  id: "26"
+  taggable_type: Article
+  taggable_id: "69"
+taggings_010: 
+  tag_id: "3"
+  id: "27"
+  taggable_type: Offer
+  taggable_id: "183"
+taggings_011: 
+  tag_id: "3"
+  id: "28"
+  taggable_type: Offer
+  taggable_id: "355"
+taggings_012: 
+  tag_id: "3"
+  id: "29"
+  taggable_type: Offer
+  taggable_id: "358"
+taggings_001: 
+  tag_id: "2"
+  id: "2"
+  taggable_type: Article
+  taggable_id: "1"
+taggings_013: 
+  tag_id: "3"
+  id: "30"
+  taggable_type: Offer
+  taggable_id: "174"
+taggings_002: 
+  tag_id: "1"
+  id: "10"
+  taggable_type: Article
+  taggable_id: "2"

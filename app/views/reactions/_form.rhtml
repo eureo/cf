@@ -1,0 +1,24 @@
+<form action="/reactions" method="post" id="contact">
+<% unless @article.nil? %>
+<input type="hidden" name="reaction[article]" value="<%= @article.title %>" />
+<% end %>
+<div>
+  <label>Sujet</label>
+  <input type="text" name="reaction[subject]" size="50" />
+</div>
+<div>
+  <label>Email</label>
+  <input type="text" name="reaction[email]" size="50" />
+</div>
+<div>
+  <label>Que font six plus huit ?</label>
+  <input type="text" name="reaction[answer]" size="10" />
+</div>
+<div>
+  <label>Message</label>
+  <textarea name="reaction[content]" size="50" rows="15" ></textarea>
+</div>
+<div>
+  <%= submit_tag "Envoyer" %>
+</div>
+</form>

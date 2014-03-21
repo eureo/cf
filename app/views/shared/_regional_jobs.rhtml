@@ -1,0 +1,5 @@
+<div class="cbb orange" id="jobs">
+	<h2>Connexion Emploi</h2>
+	<%= read_regional_offer_rss("www.connexion-emploi.com/offers/feed/#{@current_region.permalink}.rss", @current_region.name) %>
+	<a href="http://connexion-emploi.com">+ d'offres</a>
+</div>

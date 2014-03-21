@@ -1,0 +1,9 @@
+<div id="main">
+	<h1><%= @sector.name %></h1>
+	<ul>
+		<li><%=  l('Members') %> : <%= @newsletter_members.get_valid_emails.size %></li>
+	</ul>
+	
+	<h2><%= l('Emails') %></h2>
+	<%= @newsletter_members.get_valid_emails.join(', ') %>
+</div>

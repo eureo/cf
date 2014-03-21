@@ -1,0 +1,19 @@
+--- 
+cms_admin: 
+  title: cms_admin
+  id: "4"
+offer: 
+  title: offer
+  id: "5"
+offer_admin: 
+  title: offer_admin
+  id: "6"
+user: 
+  title: user
+  id: "1"
+admin: 
+  title: admin
+  id: "2"
+cms: 
+  title: cms
+  id: "3"

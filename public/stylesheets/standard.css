@@ -1,0 +1,106 @@
+/* =strong
+------------------------------------------------*/
+.strong { font-weight:bold }
+
+hr { margin: 1.5em 0; }
+
+fieldset { border: 1px solid #CCC;}
+legend { padding: 0 0.5em; font-weight: bold; color: #444; }
+
+/* =pagination
+------------------------------------------------*/
+#pagination { float: left; }
+#pagination #page { float: left; }
+#pagination #previous-and-next { float: left; margin-left:10px; }
+#pagination a { padding:0 margin: 0 0.3em; }
+
+/* =breadcrumbs
+------------------------------------------------*/
+#breadcrumbs {}
+#breadcrumbs { 
+  margin-top: 0;
+  margin-bottom: 1.5em;
+}
+#breadcrumbs a { text-decoration: none; color: #333; line-height: 150%; }
+#breadcrumbs a:link,
+#breadcrumbs a:visited { text-decoration: none; color: #333; }
+#breadcrumbs a:hover { text-decoration: underline; color: #333; }
+
+/* =spinner
+------------------------------------------------*/
+.spinner { }
+.spinner img { margin-right: 5px; }
+
+/* =load-indicator : default is black
+------------------------------------------------*/
+#load-indicator {
+	position:fixed;
+	top:35%;
+	left:50%;
+	width:100px;
+	height:50px;
+	z-index:5000;
+	%border: #000 solid 3px;
+	%background-color: #000;
+  %background-image:	url('../images/black-loader.gif');
+  background-repeat: no-repeat;
+  background-position: 50% 35%;
+	-moz-opacity: 0.8;
+	opacity:.80;
+	filter: alpha(opacity=80);
+}
+
+.black-loader {
+	border: #000 solid 3px;
+	background-color: #000;
+  background-image:	url('../images/black-loader.gif');
+}
+
+.yellow-loader {
+	border: #AF9567 solid 3px;
+	background-color: #F7E772;
+  background-image:	url('../images/yellow-loader.gif');
+}
+
+
+
+/* =form
+------------------------------------------------*/
+
+form div { margin: 10px 0; }
+option { padding: 0 1em; }
+label { display: block; padding: 0 0.5em 0.3em 0; }
+label.inline { float:left; width:18em; }
+em.required { color: red; font-style: normal; padding: 0 0.2em; }
+input[type="text"] { width: 200px; padding: 1px; }
+input[type="password"] { width: 200px; padding: 1px; }
+input.button { padding: 0; }
+
+.trash img { border: none; }
+
+fieldset { display:block; margin: 1.5em 0; padding:1em; width:40em; }
+
+
+/* =image shadow
+----------------------------------------------- */
+
+.img-shadow {
+  float:left;
+  background: url(../images/shadowAlpha.png) no-repeat bottom right !important;
+  background: url(../images/shadow.gif) no-repeat bottom right;
+  margin: 10px 0 0 10px !important;
+  margin: 10px 0 0 5px;
+}
+
+.img-shadow img {
+  display: block;
+  position: relative;
+  background-color: #fff;
+  border: 1px solid #a9a9a9;
+  margin: -6px 6px 6px -6px;
+  padding: 4px;
+}
+
+
+.clear { clear: both; height:1%; margin:0; padding:0; line-height:1%; }
+.center { text-align:center; }

@@ -1,0 +1,14 @@
+<div id="category_menu">
+  <h2><%= link_to "Vivre en Allemagne", url_for(:controller => "category") %></h2>
+  <ul>  
+  	<% for category in @categories -%>
+  	<li>
+  		<% if highlight_category(category) -%>
+  			<%= link_to "#{category.name} (#{category.published_articles.size})", category_path(category), :class => "current" %>
+  		<% else -%>
+  			<%= link_to "#{category.name} (#{category.published_articles.size})", category_path(category) %>
+  		<% end -%>
+  	</li>
+  	<% end -%>
+  </ul>
+</div>

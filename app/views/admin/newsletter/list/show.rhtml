@@ -1,0 +1,18 @@
+<div id="main">
+	<% unless @list.nil? %>
+		<h1><%= @list.name %></h1>
+		<ul>
+			<li><%= l('Members') %> : <%= @list.ml_members.size %></li>
+		</ul>
+		<h2><%= l('Emails') %> :</h2>
+		<%= @list.ml_members.collect {|m| m.email }.join(', ') %>
+	<% end %>
+</div>
+
+<div id="sidebar">
+	<ul class="button">
+		<li><%= link_to l("add members"), :action => "add_members", :list_id => @list %></li>
+		<li><%= link_to l("edit list"), :action => "edit", :id => @list %></li>
+		<li><%= link_to l("delete list"), { :action => "delete", :id => @list }, :confirm => "Are You Sure ?" %></li>
+	</ul>
+</div>

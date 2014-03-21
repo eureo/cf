@@ -1,0 +1,45 @@
+<div id="main">
+	
+	<% unless @member.errors.empty? -%>
+    <div id="ErrorExplanation">
+      <h2><%= l("something gone wrong") %></h2>
+      <ul>
+      <% @member.errors.each do |attr, msg| -%>
+        <li><%=h l(attr.capitalize) %> <%= l(msg) %></li>
+      <% end -%>
+      </ul>
+    </div>
+    <div class="clear"></div>
+  <% end -%>
+  
+	
+	<% form_for :member, :url => { :action => "add_members" } do |f| %>
+		<input type="hidden" name="list_id" value="<%= (@list && @list.id) || params[:list_id] %>">
+		<p>Email</p> 
+		<p><%= f.text_field :email %>&nbsp;&nbsp;<em>ex: olivier@connexion-emploi.com</em></p>
+		<p>
+			<%= submit_tag l('Add') %>
+	 		<%= link_to l("cancel"), :action => "show", :id => @list %>
+		</p>
+	<% end %>
+
+	<% unless @csv_files.nil? or @csv_files.size == 0 %>
+	<hr />
+	<% form_for :csv_file, :url => { :action => "import_from_csv" } do |f| %>
+		<input type="hidden" name="list_id" value="<%= (@list && @list.id) || params[:list_id] %>">
+		<p> <%= l("Import Emails from CSV File") %></p>
+		<p>
+		<select name="csv_file[file_id]" >
+			<% for csv_file in @csv_files %>
+			<option value="<%= csv_file.id %>"><%= csv_file.filename %></option>
+			<% end %>
+		</select>
+		</p>
+		<p>
+			<%= submit_tag l('Add') %>
+	 		<%= link_to l("cancel"), :action => "show", :id => @list %>
+		</p>
+	<% end %>
+	<% end %>	
+	
+</div>

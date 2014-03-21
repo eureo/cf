@@ -1,0 +1,19 @@
+<div id="main">
+	<h2><%= l('Editing : ') + @list.name %></h2>
+	
+	<% unless @list.nil? -%>
+	  <%= error_messages_for 'list', {
+		 	:header => "something gone wrong"
+	  } %>
+	<% end -%>
+
+	
+	<% form_for :list, :url => { :action => 'edit' } do |f| -%>
+		<p>Name <%= f.text_field :name %></p>
+		<p>
+			<%= submit_tag l('Update') %>
+	 		<%= link_to l("cancel"), :action => "index" %>
+		</p>
+	<% end %>
+	
+</div>

@@ -1,0 +1,23 @@
+<%= breadcrumbs_category(@category) %>
+
+<% unless @first_article.nil? -%>
+<h1 class="first"><%= link_to @first_article.title, article_path(@first_article) %></h1>
+<%= read_more(@first_article.excerpt_html || "", article_path(@first_article), "lire la suite") %>
+<% else %>
+<p>Aucun article dans cette rubrique</p>
+<% end -%>
+
+<% unless @remaining_articles.nil? or @remaining_articles.empty? -%>
+
+<% if @category.permalink == "nos-videos" -%>
+<h2>Nos autres vidéos</h2>
+<% else -%>
+<h2>Les autres articles de cette catégorie</h2>
+<% end -%>
+
+<ul>
+<% for article in @remaining_articles  -%>
+	<li><%= link_to article.title, article_path(article) %></li>
+<% end -%>
+</ul>
+<% end -%>

@@ -1,0 +1,15 @@
+<%= form_tag :action => :result %>
+<label><%= l('search').capitalize %></label>
+<% text_field_tag "query" %>
+</form>
+
+<div id="results">
+  <% if @articles.nil? -%>
+    <p>No results</p>
+  <% else -%>
+  <ul>
+  <% @articles.each do |article| -%>
+  <li><%= link_to article.title, article_url article %></li>
+  <% end -%>
+  </ul>
+</div>

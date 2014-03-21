@@ -1,0 +1,16 @@
+<div id="regions" class="cbb red">
+	<h2>Régions</h2>
+	<div id="carte">
+		<p>Information régionales</p>
+		<p id="lander">Cliquer sur un Land</p>
+		<%= render :partial => '/shared/carte' %>
+	</div>
+	<form action="/category/regions" id="regions-menu" method="post">
+	<select name="region">
+		<% for region in @regions -%>
+		<option value=<%= "#{region.permalink}"%> ><%= region.name %></option>
+		<% end -%>
+	</select>
+	<input type="submit" value="Go" />
+	</form>
+</div>

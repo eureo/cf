@@ -1,0 +1,56 @@
+<div id="newsletter">
+
+  <% if params[:video] == '1' %>
+    <iframe src="//fast.wistia.net/embed/iframe/61zoyccwp7" allowtransparency="true" frameborder="0" scrolling="no" class="wistia_embed" name="wistia_embed" allowfullscreen mozallowfullscreen webkitallowfullscreen oallowfullscreen msallowfullscreen width="600" height="366"></iframe>
+  <% end %>
+
+  <h1>Soyez informé des dernières nouveautés du site pratique des Français en Allemagne</h1>
+
+  <div class='left'>
+    <a class="sample" href="/images/newsletter_cf.jpg"><img src='/images/newsletter_cf200.jpg' width="200" /></a>
+    <p class="instruct">Cliquez pour obtenir un aperçu de la newsletter</p>
+  </div>
+
+  <div class='right'>
+    <p id="tagline">Faites comme nos 15 000 inscrits et joignez-vous au plus grand réseau franco-allemand !
+
+    <form action="/newsletter" method="post" id="newsletter">
+      <img src='/images/arrow_orange_64.png' width='50' class='arrow' />
+      <h2>Abonnez-vous gratuitement à la newsletter hebdo de Connexion-Francaise et recevez...</h2>
+      <ul>
+        <li>des conseils pratiques pour vous faciliter la vie en Allemagne</li>
+        <li>des articles et vidéos ludiques</li>
+        <li>des infos locales de toutes les régions allemandes</li>
+        <li>des offres d'emploi destinées aux francophones en Allemagne</li>
+      </ul>
+      <p>
+      <label>Email</label>
+      <input name="mail" type="text" size="35" class="email" /> 
+      </p>
+      <p> 
+      <label>Zone géographique</label>
+      <select name="zonegeo"> 
+        <option value="badenwuerttemberg">Baden-Württemberg</option> 
+        <option value="bayern">Bayern</option> 
+        <option value="berlin">Berlin</option> 
+        <option value="bremen">Bremen</option> 
+        <option value="hambourg">Hamburg</option> 
+        <option value="hessen">Hessen</option> 
+        <option value="niedersachsen">Niedersachsen</option> 
+        <option value="nordrheinwestfalen">Nordrhein-Westfalen</option> 
+        <option value="rheinlandpfalz">Rheinland-Pfalz</option> 
+        <option value="saarland">Saarland</option> 
+        <option value="sachsen">Sachsen</option> 
+        <option value="sachsenanhalt">Sachsen-Anhalt</option> 
+        <option value="schleswigholstein">Schleswig-Holstein</option> 
+        <option value="thueringen">Thüringen</option> 
+      </select>            
+      </p> 
+      <p> 
+      <input type="submit" value="M'abonner à la newsletter" class="bouton" /> 
+      </p> 
+    </fieldset> 
+  </form>
+  <p id="confidentiality">* Votre adresse email restera confidentielle et ne sera jamais partagée.</p>
+</div>
+</div>

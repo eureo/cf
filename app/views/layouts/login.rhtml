@@ -1,0 +1,20 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml-1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="FR" lang="FR">
+<head>
+  <title><%= @page_title || '[CE]' %></title>
+  <%= javascript_include_tag 'prototype', 'effects' %>
+  <%= stylesheet_link_tag "login", :media => 'all' %>
+  <%= @content_for_stylesheet %>
+  <script type="text/javascript"><%= @content_for_page_scripts %></script>
+  <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+</head>
+<body>
+
+<div id="container">
+  <div class="wrapper"><div id="content">
+    <%= yield %>
+  </div></div>
+</div>
+
+</body>
+</html>

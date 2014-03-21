@@ -1,0 +1,30 @@
+<% @page_title = l('roles').capitalize %>
+
+<div id="roles">
+
+<h2><%= @page_title %></h2>
+
+<table cellspacing="0" cellpadding="0">
+  <thead>
+    <tr>
+      <th><%= l('ROLES') %></th>
+      <th><%= l('ACTIONS') %></th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @roles.each do |role| -%>
+    <tr <%= cycle(""," class='odd'") %>>
+        <td><%= role.title %></td>
+        <td>
+          <% unless role.title == 'admin' -%>
+          <%= button_to l('delete'), { :action => 'delete', :id => role }, :confirm => l("Do you really want to delete role %s?", role.title) %>
+          <% end -%>
+        </td>
+      </tr>
+    <% end -%>
+  </tbody>
+</table>
+
+<div class="add-user-button"><%= link_to l('add role'), :action => 'new' %></div>
+
+</div>

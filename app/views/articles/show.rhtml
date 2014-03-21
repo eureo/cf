@@ -1,0 +1,46 @@
+<%= breadcrumbs_article(@article) %>
+
+<% unless @article.nil? -%>
+
+<h1 class="first"><%= @article.title %></h1>
+<div class="addthis_top addthis_toolbox addthis_default_style" addthis:url="<%= article_url(@article) %>" addthis:title="<%= @article.title %>">
+  <a class="addthis_counter addthis_pill_style"></a>
+  <a class="addthis_button_facebook_like" fb:like:layout="button_count" fb:like:action="recommend" fb:like:ref="AddThis_Blogs" fb:like:width="130"></a>
+</div>
+<%= @article.excerpt_html %>
+
+<%= render :partial => "shared/adsense/horizontal468" %>
+
+<%= @article.body_html %>
+
+<%= render :partial => "shared/reaction" %>
+
+<div class="addthis_bottom addthis_toolbox addthis_default_style addthis_32x32_style" addthis:url="<%= article_url(@article) %>" addthis:title="<%= @article.title %>">
+<a class="addthis_button_preferred_1"></a>
+<a class="addthis_button_preferred_2"></a>
+<a class="addthis_button_preferred_3"></a>
+<a class="addthis_button_preferred_4"></a>
+<a class="addthis_button_compact"></a>
+<a class="addthis_counter addthis_bubble_style"></a>
+</div>
+
+
+
+<div class="fb-comments" data-href="<%= article_url(@article) %>" data-num-posts="10" data-width="520"></div>
+
+<% content_for(:head) do %>
+<script type="text/javascript">
+  $(function(){
+    $('#reaction a.contact').click(function(){
+      $('#reaction form').toggle();
+      return false;
+    });
+  });
+</script>
+
+<script type="text/javascript">var addthis_config = {"data_track_addressbar":true};</script>
+<script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#pubid=ra-4f5484c53b726f9e"></script>
+<meta property="fb:app_id" content="189695031095770">
+<% end %>
+
+<% end -%>
